@@ -76,11 +76,11 @@
 		B30EDF8E1F09C7C7006BDA24 = {
 			isa = PBXGroup;
 			children = (
-				B30EDF991F09C7C7006BDA24 /* Democracy */,
-				B30EDFAE1F09C7C8006BDA24 /* DemocracyTests */,
-				B30EDF981F09C7C7006BDA24 /* Products */,
-				23D0DBA270800BB3BA64F08D /* Pods */,
 				EF06A1A70903DDF6F47B5DC5 /* Frameworks */,
+				23D0DBA270800BB3BA64F08D /* Pods */,
+				B30EDF981F09C7C7006BDA24 /* Products */,
+				B30EDF991F09C7C7006BDA24 /* Sources */,
+				B30EDFAE1F09C7C8006BDA24 /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,24 +93,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B30EDF991F09C7C7006BDA24 /* Democracy */ = {
+		B30EDF991F09C7C7006BDA24 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */,
 				B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */,
-				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
 				B30EDFA61F09C7C7006BDA24 /* Info.plist */,
+				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
 			);
-			path = Democracy;
+			name = Sources;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		B30EDFAE1F09C7C8006BDA24 /* DemocracyTests */ = {
+		B30EDFAE1F09C7C8006BDA24 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				B30EDFAF1F09C7C8006BDA24 /* DemocracyTests.swift */,
 				B30EDFB11F09C7C8006BDA24 /* Info.plist */,
 			);
-			path = DemocracyTests;
+			name = Tests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		EF06A1A70903DDF6F47B5DC5 /* Frameworks */ = {
@@ -353,6 +355,7 @@
 				B30EDFA41F09C7C7006BDA24 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -457,7 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q86GGRUX8;
-				INFOPLIST_FILE = Democracy/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.Democracy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,7 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q86GGRUX8;
-				INFOPLIST_FILE = Democracy/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.Democracy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,7 +487,7 @@
 			baseConfigurationReference = 296DC85D24525959AEFBB022 /* Pods-DemocracyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DemocracyTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.DemocracyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,7 +501,7 @@
 			baseConfigurationReference = D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DemocracyTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.DemocracyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
