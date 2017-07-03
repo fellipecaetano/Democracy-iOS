@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A10C07774A23C7B6279D6A6 /* Pods_DemocracyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501E99DFEC72A8D1D2D26953 /* Pods_DemocracyTests.framework */; };
 		B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */; };
 		B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */; };
 		B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */; };
 		B30EDFB01F09C7C8006BDA24 /* DemocracyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30EDFAF1F09C7C8006BDA24 /* DemocracyTests.swift */; };
+		E37AB9CABA41A66ECDC9E338 /* Pods_Democracy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296DC85D24525959AEFBB022 /* Pods-DemocracyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		501E99DFEC72A8D1D2D26953 /* Pods_DemocracyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemocracyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30EDF971F09C7C7006BDA24 /* Democracy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Democracy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +36,10 @@
 		B30EDFAB1F09C7C8006BDA24 /* DemocracyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemocracyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30EDFAF1F09C7C8006BDA24 /* DemocracyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemocracyTests.swift; sourceTree = "<group>"; };
 		B30EDFB11F09C7C8006BDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Democracy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.release.xcconfig"; sourceTree = "<group>"; };
+		E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37AB9CABA41A66ECDC9E338 /* Pods_Democracy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +55,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A10C07774A23C7B6279D6A6 /* Pods_DemocracyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23D0DBA270800BB3BA64F08D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */,
+				DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */,
+				296DC85D24525959AEFBB022 /* Pods-DemocracyTests.debug.xcconfig */,
+				D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B30EDF8E1F09C7C7006BDA24 = {
 			isa = PBXGroup;
 			children = (
 				B30EDF991F09C7C7006BDA24 /* Democracy */,
 				B30EDFAE1F09C7C8006BDA24 /* DemocracyTests */,
 				B30EDF981F09C7C7006BDA24 /* Products */,
+				23D0DBA270800BB3BA64F08D /* Pods */,
+				EF06A1A70903DDF6F47B5DC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +113,15 @@
 			path = DemocracyTests;
 			sourceTree = "<group>";
 		};
+		EF06A1A70903DDF6F47B5DC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */,
+				501E99DFEC72A8D1D2D26953 /* Pods_DemocracyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B30EDFB41F09C7C8006BDA24 /* Build configuration list for PBXNativeTarget "Democracy" */;
 			buildPhases = (
+				264D40EF4AE800767442B685 /* [CP] Check Pods Manifest.lock */,
 				B30EDF931F09C7C7006BDA24 /* Sources */,
 				B30EDF941F09C7C7006BDA24 /* Frameworks */,
 				B30EDF951F09C7C7006BDA24 /* Resources */,
+				88304A79F404BD93006C6A85 /* [CP] Embed Pods Frameworks */,
+				CEE3799EB337865CEEE0A07E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -114,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B30EDFB71F09C7C8006BDA24 /* Build configuration list for PBXNativeTarget "DemocracyTests" */;
 			buildPhases = (
+				B0E40E037749E7273D806E73 /* [CP] Check Pods Manifest.lock */,
 				B30EDFA71F09C7C8006BDA24 /* Sources */,
 				B30EDFA81F09C7C8006BDA24 /* Frameworks */,
 				B30EDFA91F09C7C8006BDA24 /* Resources */,
+				16E17C43E5E25CB1095A9D9A /* [CP] Embed Pods Frameworks */,
+				5C1DB618BAE3EEA1A85666A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +225,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E17C43E5E25CB1095A9D9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		264D40EF4AE800767442B685 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5C1DB618BAE3EEA1A85666A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88304A79F404BD93006C6A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Democracy/Pods-Democracy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E40E037749E7273D806E73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE3799EB337865CEEE0A07E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Democracy/Pods-Democracy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B30EDF931F09C7C7006BDA24 /* Sources */ = {
@@ -322,6 +453,7 @@
 		};
 		B30EDFB51F09C7C8006BDA24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q86GGRUX8;
@@ -335,6 +467,7 @@
 		};
 		B30EDFB61F09C7C8006BDA24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8Q86GGRUX8;
@@ -348,8 +481,8 @@
 		};
 		B30EDFB81F09C7C8006BDA24 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296DC85D24525959AEFBB022 /* Pods-DemocracyTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DemocracyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -362,8 +495,8 @@
 		};
 		B30EDFB91F09C7C8006BDA24 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DemocracyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -393,6 +526,7 @@
 				B30EDFB61F09C7C8006BDA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B30EDFB71F09C7C8006BDA24 /* Build configuration list for PBXNativeTarget "DemocracyTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +535,7 @@
 				B30EDFB91F09C7C8006BDA24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
