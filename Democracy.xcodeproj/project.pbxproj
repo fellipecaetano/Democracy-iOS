@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */; };
-		B30EDF9D1F09C7C7006BDA24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30EDF9C1F09C7C7006BDA24 /* ViewController.swift */; };
-		B30EDFA01F09C7C7006BDA24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30EDF9E1F09C7C7006BDA24 /* Main.storyboard */; };
 		B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */; };
 		B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */; };
 		B30EDFB01F09C7C8006BDA24 /* DemocracyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30EDFAF1F09C7C8006BDA24 /* DemocracyTests.swift */; };
@@ -28,8 +26,6 @@
 /* Begin PBXFileReference section */
 		B30EDF971F09C7C7006BDA24 /* Democracy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Democracy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B30EDF9C1F09C7C7006BDA24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B30EDF9F1F09C7C7006BDA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30EDFA41F09C7C7006BDA24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30EDFA61F09C7C7006BDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */,
-				B30EDF9C1F09C7C7006BDA24 /* ViewController.swift */,
-				B30EDF9E1F09C7C7006BDA24 /* Main.storyboard */,
 				B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */,
 				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
 				B30EDFA61F09C7C7006BDA24 /* Info.plist */,
@@ -146,6 +140,7 @@
 				TargetAttributes = {
 					B30EDF961F09C7C7006BDA24 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8Q86GGRUX8;
 						ProvisioningStyle = Automatic;
 					};
 					B30EDFAA1F09C7C8006BDA24 = {
@@ -181,7 +176,6 @@
 			files = (
 				B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */,
 				B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */,
-				B30EDFA01F09C7C7006BDA24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +193,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30EDF9D1F09C7C7006BDA24 /* ViewController.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +216,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B30EDF9E1F09C7C7006BDA24 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B30EDF9F1F09C7C7006BDA24 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q86GGRUX8;
 				INFOPLIST_FILE = Democracy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.Democracy;
@@ -351,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8Q86GGRUX8;
 				INFOPLIST_FILE = Democracy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.thedevelopersconference.Democracy;
