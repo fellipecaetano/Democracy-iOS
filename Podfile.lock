@@ -1,19 +1,28 @@
 PODS:
+  - Alamofire (4.5.0)
   - Nimble (7.0.1)
+  - RxAlamofire (3.0.3):
+    - RxAlamofire/Core (= 3.0.3)
+  - RxAlamofire/Core (3.0.3):
+    - Alamofire (~> 4.0)
+    - RxSwift (~> 3.0)
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
 
 DEPENDENCIES:
   - Nimble
+  - RxAlamofire
   - RxCocoa
   - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
 
-PODFILE CHECKSUM: d53d5c73188f58dd14bfd6cb74d04c24978aa239
+PODFILE CHECKSUM: 5f90bb9924d9d6c414914ee1fea25268411a5d80
 
 COCOAPODS: 1.2.1

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +20,11 @@
 			<false/>
 		</dict>
 		<key>Pods-DemocracyTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxAlamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,17 +42,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>380248D651D716D28098B42889E5CD09</key>
+		<key>5D6437895DAA03CC717105321BFDAF4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38461759AF719AABE681C3A2187C0F4E</key>
+		<key>67B57CFA23CCF554EA160F35F4E2A272</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>729A9E96ACEAB96CCB9ABAA67A124E80</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A98151517C1DFF894228B9B685436D6C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +68,11 @@
 			<true/>
 		</dict>
 		<key>DD7C8BF89FE8053D0A2A2D88BB49CF07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE8CE125FC78746E1FA513AC1C1AE3BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
