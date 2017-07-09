@@ -9,12 +9,14 @@ PODS:
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
+  - Unbox (2.5.0)
 
 DEPENDENCIES:
   - Nimble
   - RxAlamofire
   - RxCocoa
   - RxSwift
+  - Unbox
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
@@ -22,7 +24,8 @@ SPEC CHECKSUMS:
   RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 5f90bb9924d9d6c414914ee1fea25268411a5d80
+PODFILE CHECKSUM: 33f32dc2bab9ea11876a42d053ba83a23af8d319
 
 COCOAPODS: 1.2.1

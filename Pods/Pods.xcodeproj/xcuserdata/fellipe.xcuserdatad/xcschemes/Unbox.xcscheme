@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E760FF2A57D262F538E9E33B433576B0'
-               BlueprintName = 'RxSwift'
+               BlueprintIdentifier = 'B5C5BF2226C7E9270A7AA0AC880008B6'
+               BlueprintName = 'Unbox'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'RxSwift.framework'>
+               BuildableName = 'Unbox.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
