@@ -7,20 +7,6 @@ final class TestData {
     fileprivate static var fakeDataGenerator = Faker()
 }
 
-private extension TestData {
-    struct Generator<T>: IteratorProtocol, Sequence {
-        let _next: () -> T
-
-        init (_ next: @escaping () -> T) {
-            _next = next
-        }
-
-        mutating func next() -> T? {
-            return _next()
-        }
-    }
-}
-
 extension TestData {
     static func error() -> Error {
         let domain = String.random(using: &randomGenerator)
@@ -28,9 +14,9 @@ extension TestData {
         return NSError(domain: domain, code: code, userInfo: nil)
     }
 
-    static func politicians() -> [Politician] {
+    static func politicians(count: Int) -> [Politician] {
         return Array(
-            Generator {
+            Generator(count: count) {
                 Politician(
                     name: .random(using: &randomGenerator),
                     photoUrl: URL(string: fakeDataGenerator.internet.url())!,

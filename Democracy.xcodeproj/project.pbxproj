@@ -21,6 +21,12 @@
 		B38445CC1F12FCB300D758BA /* PoliticiansReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */; };
 		B38445CF1F1319A000D758BA /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445CD1F13196D00D758BA /* TestData.swift */; };
 		B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445D11F131CC000D758BA /* Error+PatternMatching.swift */; };
+		B390A5D11F134594006CB64A /* Currying.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D01F134594006CB64A /* Currying.swift */; };
+		B390A5D31F1345AC006CB64A /* Flipping.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D21F1345AC006CB64A /* Flipping.swift */; };
+		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
+		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
+		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
+		B390A5E01F135031006CB64A /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DF1F135031006CB64A /* GeneratorTests.swift */; };
 		E37AB9CABA41A66ECDC9E338 /* Pods_Democracy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +61,12 @@
 		B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducerTests.swift; sourceTree = "<group>"; };
 		B38445CD1F13196D00D758BA /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		B38445D11F131CC000D758BA /* Error+PatternMatching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Error+PatternMatching.swift"; sourceTree = "<group>"; };
+		B390A5D01F134594006CB64A /* Currying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currying.swift; sourceTree = "<group>"; };
+		B390A5D21F1345AC006CB64A /* Flipping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flipping.swift; sourceTree = "<group>"; };
+		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
+		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		B390A5DF1F135031006CB64A /* GeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
 		D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.release.xcconfig"; sourceTree = "<group>"; };
 		E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,11 +126,11 @@
 		B30EDF991F09C7C7006BDA24 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B38445D01F131CB500D758BA /* Support */,
+				B38445B81F12ECDC00D758BA /* Networking */,
 				B38445C01F12EDA200D758BA /* Politicians */,
 				B38445BD1F12ED7D00D758BA /* Redux */,
+				B38445D01F131CB500D758BA /* Support */,
 				B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */,
-				B38445B81F12ECDC00D758BA /* Networking */,
 				B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */,
 				B30EDFA61F09C7C7006BDA24 /* Info.plist */,
 				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
@@ -129,9 +141,9 @@
 		B30EDFAE1F09C7C8006BDA24 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B390A5D71F134F7E006CB64A /* Cases */,
+				B390A5D61F134F79006CB64A /* Support */,
 				B30EDFB11F09C7C8006BDA24 /* Info.plist */,
-				B38445CD1F13196D00D758BA /* TestData.swift */,
-				B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -142,7 +154,7 @@
 				B38445B91F12ED0100D758BA /* Request.swift */,
 				B38445BB1F12ED0D00D758BA /* SessionManager+Rx.swift */,
 			);
-			name = Networking;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		B38445BD1F12ED7D00D758BA /* Redux */ = {
@@ -150,7 +162,7 @@
 			children = (
 				B38445BE1F12ED8800D758BA /* Action.swift */,
 			);
-			name = Redux;
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		B38445C01F12EDA200D758BA /* Politicians */ = {
@@ -159,17 +171,17 @@
 				B38445C41F12EE1700D758BA /* Models */,
 				B38445C11F12EDEB00D758BA /* Redux */,
 			);
-			name = Politicians;
+			path = Politicians;
 			sourceTree = "<group>";
 		};
 		B38445C11F12EDEB00D758BA /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				B38445C21F12EDF500D758BA /* PoliticiansState.swift */,
-				B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */,
 				B38445C91F12FC5200D758BA /* PoliticiansAction.swift */,
+				B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */,
+				B38445C21F12EDF500D758BA /* PoliticiansState.swift */,
 			);
-			name = Redux;
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		B38445C41F12EE1700D758BA /* Models */ = {
@@ -177,15 +189,37 @@
 			children = (
 				B38445C51F12EE1C00D758BA /* Politician.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		B38445D01F131CB500D758BA /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				B390A5D01F134594006CB64A /* Currying.swift */,
 				B38445D11F131CC000D758BA /* Error+PatternMatching.swift */,
+				B390A5D21F1345AC006CB64A /* Flipping.swift */,
 			);
-			name = Support;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B390A5D61F134F79006CB64A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */,
+				B38445CD1F13196D00D758BA /* TestData.swift */,
+				B390A5D41F134F72006CB64A /* Transition.swift */,
+				B390A5DC1F135000006CB64A /* Generator.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		B390A5D71F134F7E006CB64A /* Cases */ = {
+			isa = PBXGroup;
+			children = (
+				B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */,
+				B390A5DF1F135031006CB64A /* GeneratorTests.swift */,
+			);
+			path = Cases;
 			sourceTree = "<group>";
 		};
 		EF06A1A70903DDF6F47B5DC5 /* Frameworks */ = {
@@ -408,6 +442,8 @@
 				B38445BC1F12ED0D00D758BA /* SessionManager+Rx.swift in Sources */,
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
+				B390A5D11F134594006CB64A /* Currying.swift in Sources */,
+				B390A5D31F1345AC006CB64A /* Flipping.swift in Sources */,
 				B38445CA1F12FC5200D758BA /* PoliticiansAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,8 +452,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B390A5D81F134F8D006CB64A /* Transition.swift in Sources */,
 				B38445CC1F12FCB300D758BA /* PoliticiansReducerTests.swift in Sources */,
 				B38445CF1F1319A000D758BA /* TestData.swift in Sources */,
+				B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */,
+				B390A5DE1F13501A006CB64A /* Generator.swift in Sources */,
+				B390A5E01F135031006CB64A /* GeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
