@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RandomKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxAlamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,30 +44,75 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ShiftOperations.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Threadly.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Unbox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>380248D651D716D28098B42889E5CD09</key>
+		<key>0A1C548AC019EBD8501B02D3BA0A8131</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>38461759AF719AABE681C3A2187C0F4E</key>
+		<key>15D56D091D9EE1C82D9600B61BAC07A5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>729A9E96ACEAB96CCB9ABAA67A124E80</key>
+		<key>51EAFFC816E6004439E3E7C936294259</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAE1A61DEA8D2F66A6FCFC44A204FA2A</key>
+		<key>5BB0D65FC084808408FF5A89E84FDE4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FD1387110ECAAA2E16F96EB563B9233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>632D566426EA254B8D47A14AC989B22A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5C5BF2226C7E9270A7AA0AC880008B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C742D32E0580A13DC3416C3D0C84C41A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>DD7C8BF89FE8053D0A2A2D88BB49CF07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E760FF2A57D262F538E9E33B433576B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,9 +6,12 @@ target 'Democracy' do
 
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'Unbox'
 
   target 'DemocracyTests' do
     inherit! :search_paths
     pod 'Nimble'
+    pod 'RandomKit'
   end
 end
