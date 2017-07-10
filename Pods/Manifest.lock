@@ -1,6 +1,9 @@
 PODS:
   - Alamofire (4.5.0)
   - Nimble (7.0.1)
+  - RandomKit (5.1.0):
+    - ShiftOperations (~> 1.0.2)
+    - Threadly (~> 1.0)
   - RxAlamofire (3.0.3):
     - RxAlamofire/Core (= 3.0.3)
   - RxAlamofire/Core (3.0.3):
@@ -9,10 +12,13 @@ PODS:
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
   - RxSwift (3.5.0)
+  - ShiftOperations (1.0.2)
+  - Threadly (1.2.0)
   - Unbox (2.5.0)
 
 DEPENDENCIES:
   - Nimble
+  - RandomKit
   - RxAlamofire
   - RxCocoa
   - RxSwift
@@ -21,11 +27,14 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  RandomKit: 300a73d10e84efcd5efd450a7c56ceeec7d27dbb
   RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
+  ShiftOperations: 702c9aa98d3b20d98dceb71dd8437b562f7ab3ad
+  Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 33f32dc2bab9ea11876a42d053ba83a23af8d319
+PODFILE CHECKSUM: 94f449a496de97fb4c4d237fb5f56aaa9feca393
 
 COCOAPODS: 1.2.1

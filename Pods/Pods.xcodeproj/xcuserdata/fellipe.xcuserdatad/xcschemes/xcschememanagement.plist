@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RandomKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxAlamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,6 +40,16 @@
 			<false/>
 		</dict>
 		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ShiftOperations.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Threadly.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +67,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>15D56D091D9EE1C82D9600B61BAC07A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>51EAFFC816E6004439E3E7C936294259</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5BB0D65FC084808408FF5A89E84FDE4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5FD1387110ECAAA2E16F96EB563B9233</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>632D566426EA254B8D47A14AC989B22A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -63,11 +98,6 @@
 			<true/>
 		</dict>
 		<key>B5C5BF2226C7E9270A7AA0AC880008B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BAE1A61DEA8D2F66A6FCFC44A204FA2A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
