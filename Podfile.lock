@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.5.0)
+  - Fakery (2.0.0)
   - Nimble (7.0.1)
   - RandomKit (5.1.0):
     - ShiftOperations (~> 1.0.2)
@@ -17,6 +18,7 @@ PODS:
   - Unbox (2.5.0)
 
 DEPENDENCIES:
+  - Fakery
   - Nimble
   - RandomKit
   - RxAlamofire
@@ -26,6 +28,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   RandomKit: 300a73d10e84efcd5efd450a7c56ceeec7d27dbb
   RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
@@ -35,6 +38,6 @@ SPEC CHECKSUMS:
   Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 94f449a496de97fb4c4d237fb5f56aaa9feca393
+PODFILE CHECKSUM: 0c51df07a1b4007303b47ccfd544271aa2f3027e
 
 COCOAPODS: 1.2.1

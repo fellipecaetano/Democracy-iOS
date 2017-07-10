@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Fakery-Faker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Fakery.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,17 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>15D56D091D9EE1C82D9600B61BAC07A5</key>
+		<key>2CCA902C6B9EE5C7ECE481D059E3133A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51EAFFC816E6004439E3E7C936294259</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5BB0D65FC084808408FF5A89E84FDE4C</key>
+		<key>481A2DE87CCC53B450C75302063F2CB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,12 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>632D566426EA254B8D47A14AC989B22A</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>9DFDAEC511D20A917286BAA8AE0F50BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B08A016F593F0FC539124E84DF9A2DFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,7 +112,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>C498EBDBE0A2EF6EF719EC8718286AD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C742D32E0580A13DC3416C3D0C84C41A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA83504513E5FF72E52368BB49F00196</key>
 		<dict>
 			<key>primary</key>
 			<true/>

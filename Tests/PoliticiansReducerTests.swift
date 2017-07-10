@@ -3,8 +3,6 @@ import Nimble
 @testable import Democracy
 
 class PoliticiansReducerTests: XCTestCase {
-    private let reduce = PoliticiansReducer
-
     func testStateTransitions() {
     }
 }

@@ -13,5 +13,6 @@ target 'Democracy' do
     inherit! :search_paths
     pod 'Nimble'
     pod 'RandomKit'
+    pod 'Fakery'
   end
 end
