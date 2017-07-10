@@ -12,7 +12,7 @@
 		B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */; };
 		B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */; };
 		B38445BA1F12ED0100D758BA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445B91F12ED0100D758BA /* Request.swift */; };
-		B38445BC1F12ED0D00D758BA /* SessionManager+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445BB1F12ED0D00D758BA /* SessionManager+Rx.swift */; };
+		B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */; };
 		B38445BF1F12ED8800D758BA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445BE1F12ED8800D758BA /* Action.swift */; };
 		B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445C21F12EDF500D758BA /* PoliticiansState.swift */; };
 		B38445C61F12EE1C00D758BA /* Politician.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445C51F12EE1C00D758BA /* Politician.swift */; };
@@ -27,6 +27,7 @@
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
 		B390A5E01F135031006CB64A /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DF1F135031006CB64A /* GeneratorTests.swift */; };
+		B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */; };
 		E37AB9CABA41A66ECDC9E338 /* Pods_Democracy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,7 @@
 		B30EDFB11F09C7C8006BDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Democracy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38445B91F12ED0100D758BA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B38445BB1F12ED0D00D758BA /* SessionManager+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Rx.swift"; sourceTree = "<group>"; };
+		B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Request.swift"; sourceTree = "<group>"; };
 		B38445BE1F12ED8800D758BA /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		B38445C21F12EDF500D758BA /* PoliticiansState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansState.swift; sourceTree = "<group>"; };
 		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Politician.swift; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		B390A5DF1F135031006CB64A /* GeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
+		B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Unbox.swift"; sourceTree = "<group>"; };
 		D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.release.xcconfig"; sourceTree = "<group>"; };
 		E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,7 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				B38445B91F12ED0100D758BA /* Request.swift */,
-				B38445BB1F12ED0D00D758BA /* SessionManager+Rx.swift */,
+				B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */,
+				B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -205,10 +208,10 @@
 		B390A5D61F134F79006CB64A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				B390A5DC1F135000006CB64A /* Generator.swift */,
 				B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */,
 				B38445CD1F13196D00D758BA /* TestData.swift */,
 				B390A5D41F134F72006CB64A /* Transition.swift */,
-				B390A5DC1F135000006CB64A /* Generator.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -216,8 +219,8 @@
 		B390A5D71F134F7E006CB64A /* Cases */ = {
 			isa = PBXGroup;
 			children = (
-				B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */,
 				B390A5DF1F135031006CB64A /* GeneratorTests.swift */,
+				B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -437,9 +440,10 @@
 				B38445C81F12EF2900D758BA /* PoliticiansReducer.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 				B38445BF1F12ED8800D758BA /* Action.swift in Sources */,
+				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
 				B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */,
 				B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */,
-				B38445BC1F12ED0D00D758BA /* SessionManager+Rx.swift in Sources */,
+				B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */,
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
 				B390A5D11F134594006CB64A /* Currying.swift in Sources */,
