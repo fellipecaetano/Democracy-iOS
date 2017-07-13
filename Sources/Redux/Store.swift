@@ -3,19 +3,24 @@ import Foundation
 final class Store<State>: StoreProtocol {
     private(set) var state: State { didSet { publish(state) }}
     private let reduce: Reducer<State>
-    private var subscribers: [String: (State) -> Void]
+    private var subscribers = [String: (State) -> Void]()
     private var dispatcher: Dispatch!
 
-    public init (initialState: State,
+    init (initialState: State,
                  reducer: @escaping Reducer<State>,
                  middleware: @escaping Middleware<State>) {
         self.state = initialState
         self.reduce = reducer
-        self.subscribers = [:]
         self.dispatcher = middleware({ state }, _dispatch)(_dispatch)
     }
 
-    public func dispatch(_ action: Action) {
+    init (initialState: State, reducer: @escaping Reducer<State>) {
+        self.state = initialState
+        self.reduce = reducer
+        self.dispatcher = _dispatch
+    }
+
+    func dispatch(_ action: Action) {
         dispatcher(action)
     }
 
@@ -23,7 +28,7 @@ final class Store<State>: StoreProtocol {
         state = reduce(state, action)
     }
 
-    public func subscribe(_ subscription: @escaping (State) -> Void) -> () -> Void {
+    func subscribe(_ subscription: @escaping (State) -> Void) -> () -> Void {
         let token = UUID().uuidString
         subscribers[token] = subscription
         subscription(state)
