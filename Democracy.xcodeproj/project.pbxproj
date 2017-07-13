@@ -30,6 +30,7 @@
 		B38616501F17C4DA001099FC /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386164F1F17C4DA001099FC /* Middleware.swift */; };
 		B38616521F17C617001099FC /* Epics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616511F17C617001099FC /* Epics.swift */; };
 		B38616541F17CA7B001099FC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616531F17CA7B001099FC /* Store.swift */; };
+		B38616581F17CFE0001099FC /* Store+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616571F17CFE0001099FC /* Store+Rx.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -78,6 +79,7 @@
 		B386164F1F17C4DA001099FC /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		B38616511F17C617001099FC /* Epics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epics.swift; sourceTree = "<group>"; };
 		B38616531F17CA7B001099FC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B38616571F17CFE0001099FC /* Store+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+Rx.swift"; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				B38616511F17C617001099FC /* Epics.swift */,
 				B386164F1F17C4DA001099FC /* Middleware.swift */,
 				B38616531F17CA7B001099FC /* Store.swift */,
+				B38616571F17CFE0001099FC /* Store+Rx.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				B38445C81F12EF2900D758BA /* PoliticiansReducer.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 				B38445BF1F12ED8800D758BA /* Action.swift in Sources */,
+				B38616581F17CFE0001099FC /* Store+Rx.swift in Sources */,
 				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
 				B38616521F17C617001099FC /* Epics.swift in Sources */,
 				B38616441F17C0C5001099FC /* FunctionalUtils.swift in Sources */,
