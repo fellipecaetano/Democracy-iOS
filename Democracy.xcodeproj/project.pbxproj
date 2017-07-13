@@ -26,7 +26,8 @@
 		B386164A1F17C238001099FC /* AppSessionConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */; };
 		B386164C1F17C28D001099FC /* APIDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386164B1F17C28D001099FC /* APIDefaults.swift */; };
 		B38616521F17C617001099FC /* Epics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616511F17C617001099FC /* Epics.swift */; };
-		B38616621F17F34D001099FC /* StoreType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616611F17F34D001099FC /* StoreType+Rx.swift */; };
+		B386166B1F181117001099FC /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386166A1F181117001099FC /* Store.swift */; };
+		B386166D1F18114C001099FC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386166C1F18114C001099FC /* Action.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -71,7 +72,8 @@
 		B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionConfigurationFactory.swift; sourceTree = "<group>"; };
 		B386164B1F17C28D001099FC /* APIDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDefaults.swift; sourceTree = "<group>"; };
 		B38616511F17C617001099FC /* Epics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epics.swift; sourceTree = "<group>"; };
-		B38616611F17F34D001099FC /* StoreType+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StoreType+Rx.swift"; sourceTree = "<group>"; };
+		B386166A1F181117001099FC /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B386166C1F18114C001099FC /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				B38616511F17C617001099FC /* Epics.swift */,
-				B38616611F17F34D001099FC /* StoreType+Rx.swift */,
+				B386166A1F181117001099FC /* Store.swift */,
+				B386166C1F18114C001099FC /* Action.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -466,7 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B38445C81F12EF2900D758BA /* PoliticiansReducer.swift in Sources */,
-				B38616621F17F34D001099FC /* StoreType+Rx.swift in Sources */,
+				B386166D1F18114C001099FC /* Action.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
 				B38616521F17C617001099FC /* Epics.swift in Sources */,
@@ -475,6 +478,7 @@
 				B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */,
 				B38616461F17C0F2001099FC /* RxSwift+Unwrap.swift in Sources */,
 				B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */,
+				B386166B1F181117001099FC /* Store.swift in Sources */,
 				B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */,
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
