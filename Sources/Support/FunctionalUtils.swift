@@ -9,3 +9,9 @@ func pipe<T, U, V>(_ a: @escaping (T) -> U, _ b: @escaping (U) -> V) -> (T) -> V
         return b(a(t))
     }
 }
+
+func compose<T>(_ fns: [(T) -> T]) -> (T) -> T {
+    return { t in
+        fns.reversed().reduce(t, { v, f in f(v) })
+    }
+}

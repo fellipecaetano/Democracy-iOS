@@ -4,15 +4,22 @@ final class Store<State>: StoreProtocol {
     private(set) var state: State { didSet { publish(state) }}
     private let reduce: Reducer<State>
     private var subscribers: [String: (State) -> Void]
+    private var dispatcher: Dispatch!
 
     public init (initialState: State,
-                 reducer: @escaping Reducer<State>) {
+                 reducer: @escaping Reducer<State>,
+                 middleware: @escaping Middleware<State>) {
         self.state = initialState
         self.reduce = reducer
         self.subscribers = [:]
+        self.dispatcher = middleware({ state }, _dispatch)(_dispatch)
     }
 
     public func dispatch(_ action: Action) {
+        dispatcher(action)
+    }
+
+    private func _dispatch(_ action: Action) {
         state = reduce(state, action)
     }
 
