@@ -8,7 +8,6 @@ target 'Democracy' do
   pod 'RxCocoa'
   pod 'RxAlamofire'
   pod 'Unbox'
-  pod 'ReSwift'
 
   target 'DemocracyTests' do
     inherit! :search_paths

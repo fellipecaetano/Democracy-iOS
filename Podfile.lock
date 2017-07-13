@@ -5,7 +5,6 @@ PODS:
   - RandomKit (5.1.0):
     - ShiftOperations (~> 1.0.2)
     - Threadly (~> 1.0)
-  - ReSwift (4.0.0)
   - RxAlamofire (3.0.3):
     - RxAlamofire/Core (= 3.0.3)
   - RxAlamofire/Core (3.0.3):
@@ -22,7 +21,6 @@ DEPENDENCIES:
   - Fakery
   - Nimble
   - RandomKit
-  - ReSwift
   - RxAlamofire
   - RxCocoa
   - RxSwift
@@ -33,7 +31,6 @@ SPEC CHECKSUMS:
   Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
   RandomKit: 300a73d10e84efcd5efd450a7c56ceeec7d27dbb
-  ReSwift: f058ef13b46ae5f463f10605ccbbb7fb04424d8d
   RxAlamofire: 5eb39188c4917ad98127c0ecb4878a61b7517003
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
@@ -41,6 +38,6 @@ SPEC CHECKSUMS:
   Threadly: b772ed7c1ff4a3f03eb4600bbc5ef83b3be5cb29
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
 
-PODFILE CHECKSUM: 1bfe3836334702e0818ebf166081a19202060c7e
+PODFILE CHECKSUM: 0c51df07a1b4007303b47ccfd544271aa2f3027e
 
 COCOAPODS: 1.2.1

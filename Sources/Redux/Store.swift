@@ -1,15 +1,12 @@
 import Foundation
 
 final class Store<State>: StoreProtocol {
-    typealias Reducer = (State, Action) -> State
-    typealias Unsubscribe = () -> Void
-
     private(set) var state: State { didSet { publish(state) }}
-    private let reduce: (State, Action) -> State
+    private let reduce: Reducer<State>
     private var subscribers: [String: (State) -> Void]
 
     public init (initialState: State,
-                 reducer: @escaping Reducer) {
+                 reducer: @escaping Reducer<State>) {
         self.state = initialState
         self.reduce = reducer
         self.subscribers = [:]

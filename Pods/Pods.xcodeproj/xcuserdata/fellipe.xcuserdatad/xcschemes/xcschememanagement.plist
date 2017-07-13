@@ -39,11 +39,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>ReSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>RxAlamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,17 +72,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0A1C548AC019EBD8501B02D3BA0A8131</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2CCA902C6B9EE5C7ECE481D059E3133A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2FAB70159A28BD8D54C23A58AAA76433</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>473CD4CE2B71CDD0C11051159CEE4C92</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,12 +87,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>59A61C4105FE41448FDCE450860CFBFC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>71FEBA1DB430346805BA5594D9088E86</key>
+		<key>5FD1387110ECAAA2E16F96EB563B9233</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,17 +102,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ADB9B1934EF6890223BBD5D7E7FB511C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>B08A016F593F0FC539124E84DF9A2DFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B5C5BF2226C7E9270A7AA0AC880008B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C498EBDBE0A2EF6EF719EC8718286AD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C742D32E0580A13DC3416C3D0C84C41A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,7 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FACF303BC6C5688534A97E1327AD614A</key>
+		<key>E760FF2A57D262F538E9E33B433576B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

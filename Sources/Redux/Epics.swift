@@ -1,5 +1,4 @@
 import RxSwift
-import ReSwift
 
 typealias Epic = (Observable<Action>) -> Observable<Action>
 

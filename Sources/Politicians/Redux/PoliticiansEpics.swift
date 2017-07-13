@@ -1,5 +1,4 @@
 import RxSwift
-import ReSwift
 import Alamofire
 
 func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
