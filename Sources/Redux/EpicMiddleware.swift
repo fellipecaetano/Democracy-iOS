@@ -1,11 +1,17 @@
 import RxSwift
 
 struct EpicMiddleware {
-    static func create<T>(_ epic: Epic) -> Middleware<T> {
+    static func create<S: StoreProtocol>(_ epic: @escaping Epic) -> Middleware<S> {
         let actionSubject = PublishSubject<Action>()
 
-        return { action, _ in
-            actionSubject.onNext(action)
+        return { store in
+            _ = epic(actionSubject.asObservable()).subscribe(onNext: { [weak store] action in
+                store?.dispatch(action)
+            })
+
+            return { action in
+                actionSubject.onNext(action)
+            }
         }
     }
 }

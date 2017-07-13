@@ -1,17 +1,19 @@
 import Foundation
 
-final class Store<T> {
+final class Store<T>: StoreProtocol {
     typealias Reducer = (T, Action) -> T
     typealias Subscription = (T) -> Void
     typealias Unsubscribe = () -> Void
 
+    private(set) var state: T { didSet { publish(state) } }
+    private let middleware: Middleware<Store>
     private let reduce: Reducer
-    private var state: T { didSet { publish(state) } }
     private var subscribers: [String: Subscription]
 
-    init (reducer: @escaping Reducer, initialState: T) {
-        reduce = reducer
+    init (initialState: T, middleware: @escaping Middleware<Store>, reducer: @escaping Reducer) {
         state = initialState
+        self.middleware = middleware
+        reduce = reducer
         subscribers = [:]
     }
 
@@ -34,4 +36,10 @@ final class Store<T> {
             subscription(newState)
         })
     }
+}
+
+protocol StoreProtocol: class {
+    associatedtype State
+    var state: State { get }
+    func dispatch(_ action: Action)
 }
