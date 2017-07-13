@@ -9,12 +9,12 @@ func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
 func LoadPoliticiansEpic(actions: Observable<Action>,
                          values: @escaping (Request<[Politician]>) -> Observable<[Politician]>) -> Observable<Action> {
     return actions
-        .map(RequestFactory.request(forAction:))
+        .map(RequestFactory.request)
         .unwrap()
         .map(APIDefaults.enhanceRequest)
         .flatMap(values)
         .map(PoliticiansAction.load)
-        .catchError(pipe(PoliticiansAction.fail, Observable.just(_:)))
+        .catchError(pipe(PoliticiansAction.fail, Observable.just))
 }
 
 private struct RequestFactory {
