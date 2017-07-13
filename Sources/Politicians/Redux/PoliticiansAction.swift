@@ -1,3 +1,5 @@
+import ReSwift
+
 enum PoliticiansAction: Action {
     case startLoading
     case load([Politician])

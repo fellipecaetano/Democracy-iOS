@@ -1,3 +1,5 @@
+import ReSwift
+
 func PoliticiansReducer(state: PoliticiansState, action: Action) -> PoliticiansState {
     switch action {
     case PoliticiansAction.startLoading:
