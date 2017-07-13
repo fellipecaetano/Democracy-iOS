@@ -2,7 +2,7 @@ import RxSwift
 import Alamofire
 
 func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
-    let sessionManager = SessionManager()
+    let sessionManager = SessionManager(configuration: AppSessionConfigurationFactory.api())
     return LoadPoliticiansEpic(actions: actions, values: sessionManager.rx.value(request:))
 }
 
@@ -11,17 +11,18 @@ func LoadPoliticiansEpic(actions: Observable<Action>,
     return actions
         .map(RequestFactory.request(forAction:))
         .unwrap()
+        .map(APIDefaults.enhanceRequest)
         .flatMap(values)
         .map(PoliticiansAction.load)
         .catchError(pipe(PoliticiansAction.fail, Observable.just(_:)))
 }
 
-private final class RequestFactory {
+private struct RequestFactory {
     static func request(forAction action: Action) -> Request<[Politician]>? {
         switch action {
         case PoliticiansAction.startLoading:
             return Request<[Politician]>(
-                url: URL(string: "http://localhost:9000/politicians")!,
+                url: URL(string: "/politicians")!,
                 method: .get,
                 parameters: [:],
                 headers: [:],

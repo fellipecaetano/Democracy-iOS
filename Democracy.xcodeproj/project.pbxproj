@@ -24,6 +24,11 @@
 		B38616421F17B4B5001099FC /* PoliticiansEpics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616411F17B4B5001099FC /* PoliticiansEpics.swift */; };
 		B38616441F17C0C5001099FC /* FunctionalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616431F17C0C5001099FC /* FunctionalUtils.swift */; };
 		B38616461F17C0F2001099FC /* RxSwift+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */; };
+		B386164A1F17C238001099FC /* AppSessionConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */; };
+		B386164C1F17C28D001099FC /* APIDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386164B1F17C28D001099FC /* APIDefaults.swift */; };
+		B386164E1F17C4D4001099FC /* EpicMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386164D1F17C4D4001099FC /* EpicMiddleware.swift */; };
+		B38616501F17C4DA001099FC /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386164F1F17C4DA001099FC /* Middleware.swift */; };
+		B38616521F17C617001099FC /* Epics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616511F17C617001099FC /* Epics.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -66,6 +71,11 @@
 		B38616411F17B4B5001099FC /* PoliticiansEpics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansEpics.swift; sourceTree = "<group>"; };
 		B38616431F17C0C5001099FC /* FunctionalUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalUtils.swift; sourceTree = "<group>"; };
 		B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RxSwift+Unwrap.swift"; sourceTree = "<group>"; };
+		B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSessionConfigurationFactory.swift; sourceTree = "<group>"; };
+		B386164B1F17C28D001099FC /* APIDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDefaults.swift; sourceTree = "<group>"; };
+		B386164D1F17C4D4001099FC /* EpicMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicMiddleware.swift; sourceTree = "<group>"; };
+		B386164F1F17C4DA001099FC /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		B38616511F17C617001099FC /* Epics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Epics.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -130,6 +140,7 @@
 		B30EDF991F09C7C7006BDA24 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B38616471F17C227001099FC /* Application */,
 				B38445C01F12EDA200D758BA /* Politicians */,
 				B38445BD1F12ED7D00D758BA /* Redux */,
 				B38445D01F131CB500D758BA /* Support */,
@@ -166,6 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				B38445BE1F12ED8800D758BA /* Action.swift */,
+				B386164D1F17C4D4001099FC /* EpicMiddleware.swift */,
+				B38616511F17C617001099FC /* Epics.swift */,
+				B386164F1F17C4DA001099FC /* Middleware.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -207,6 +221,23 @@
 				B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		B38616471F17C227001099FC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B38616481F17C22F001099FC /* Networking */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		B38616481F17C22F001099FC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */,
+				B386164B1F17C28D001099FC /* APIDefaults.swift */,
+			);
+			name = Networking;
 			sourceTree = "<group>";
 		};
 		B390A5D61F134F79006CB64A /* Support */ = {
@@ -445,6 +476,7 @@
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 				B38445BF1F12ED8800D758BA /* Action.swift in Sources */,
 				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
+				B38616521F17C617001099FC /* Epics.swift in Sources */,
 				B38616441F17C0C5001099FC /* FunctionalUtils.swift in Sources */,
 				B38616421F17B4B5001099FC /* PoliticiansEpics.swift in Sources */,
 				B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */,
@@ -453,7 +485,11 @@
 				B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */,
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
+				B386164A1F17C238001099FC /* AppSessionConfigurationFactory.swift in Sources */,
+				B386164C1F17C28D001099FC /* APIDefaults.swift in Sources */,
+				B386164E1F17C4D4001099FC /* EpicMiddleware.swift in Sources */,
 				B38445CA1F12FC5200D758BA /* PoliticiansAction.swift in Sources */,
+				B38616501F17C4DA001099FC /* Middleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

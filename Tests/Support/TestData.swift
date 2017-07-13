@@ -2,7 +2,7 @@ import RandomKit
 import Fakery
 @testable import Democracy
 
-final class TestData {
+struct TestData {
     fileprivate static var randomGenerator = Xoroshiro.default
     fileprivate static var fakeDataGenerator = Faker()
 }
