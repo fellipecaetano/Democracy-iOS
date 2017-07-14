@@ -41,7 +41,6 @@ final class PoliticiansViewController: UIViewController {
             .map({ $0.data })
             .bind(to: tableView.rx.items(cellIdentifier: "PoliticianTableViewCell", cellType: UITableViewCell.self)) { index, politician, cell in
                 cell.textLabel?.text = politician.name
-                cell.detailTextLabel?.text = "\(politician.partyAcronym)-\(politician.federativeUnit)"
             }
             .disposed(by: disposeBag)
     }
