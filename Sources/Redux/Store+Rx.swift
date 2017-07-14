@@ -11,3 +11,13 @@ extension StoreProtocol where Self: ObservableType, Self.State == Self.E {
         }
     }
 }
+
+extension StoreProtocol {
+    func asObserver() -> AnyObserver<State> {
+        return AnyObserver { event in
+            if case .next(let action) = event {
+                self.dispatch(action)
+            }
+        }
+    }
+}
