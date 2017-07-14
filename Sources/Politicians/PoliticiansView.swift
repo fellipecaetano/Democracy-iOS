@@ -2,7 +2,13 @@ import UIKit
 import Cartography
 
 final class PoliticiansView: UIView {
-    let tableView = UITableView()
+    let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(PoliticianTableViewCell.self)
+        tableView.rowHeight = PoliticianTableViewCell.preferredHeight
+        tableView.tableFooterView = UIView()
+        return tableView
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -14,8 +20,6 @@ final class PoliticiansView: UIView {
     }
 
     private func setUp() {
-        tableView.register(PoliticianTableViewCell.self)
-        tableView.rowHeight = PoliticianTableViewCell.preferredHeight
         addSubview(tableView)
         createConstraints()
     }

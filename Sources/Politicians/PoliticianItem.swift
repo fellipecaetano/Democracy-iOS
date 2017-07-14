@@ -1,17 +1,17 @@
 struct PoliticianItem {
-    let title: String
-    let detail: String
+    let name: String
+    let party: String
 }
 
 struct PoliticianItemFactory {
     static func item(for politician: Politician) -> PoliticianItem {
         return PoliticianItem(
-            title: politician.name,
-            detail: detail(for: politician)
+            name: politician.name,
+            party: party(of: politician)
         )
     }
 }
 
-private func detail(for politician: Politician) -> String {
+private func party(of politician: Politician) -> String {
     return "\(politician.partyAcronym) - \(politician.federativeUnit)"
 }
