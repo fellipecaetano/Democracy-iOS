@@ -1,4 +1,5 @@
 import UIKit
+import RxCocoa
 
 final class AppRouter {
     private let window = UIWindow(frame: UIScreen.main.bounds)
@@ -12,13 +13,16 @@ final class AppRouter {
     }
 
     private func showInitialViewController() {
-        let viewController = ViewControllerFactory.politicians()
+        let viewController = ViewControllerFactory.politicians(store: store)
         navigationController.pushViewController(viewController, animated: false)
     }
 }
 
 private final class ViewControllerFactory {
-    static func politicians() -> PoliticiansViewController {
-        return PoliticiansViewController()
+    static func politicians(store: AppStore) -> PoliticiansViewController {
+        let state = store.map({ $0.politicians })
+        let viewController =  PoliticiansViewController(state: state)
+        store.connect(to: viewController.rx.actions, of: viewController)
+        return viewController
     }
 }

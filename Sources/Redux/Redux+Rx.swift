@@ -13,7 +13,11 @@ extension StoreProtocol where Self: ObservableType, Self.State == Self.E {
 }
 
 extension StoreProtocol {
-    func asObserver() -> AnyObserver<State> {
+    func connect<O: AnyObject & ReactiveCompatible>(to actions: Observable<Action>, of owner: O) {
+        _ = actions.takeUntil(owner.rx.deallocated).bind(to: asObserver())
+    }
+
+    private func asObserver() -> AnyObserver<Action> {
         return AnyObserver { event in
             if case .next(let action) = event {
                 self.dispatch(action)

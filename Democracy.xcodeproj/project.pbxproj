@@ -37,7 +37,7 @@
 		B386167C1F1953D9001099FC /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386167B1F1953D9001099FC /* AppStore.swift */; };
 		B386167E1F1953E2001099FC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386167D1F1953E2001099FC /* AppState.swift */; };
 		B38616801F1953E7001099FC /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386167F1F1953E7001099FC /* AppReducer.swift */; };
-		B38616821F195442001099FC /* Store+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616811F195442001099FC /* Store+Rx.swift */; };
+		B38616821F195442001099FC /* Redux+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616811F195442001099FC /* Redux+Rx.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -93,7 +93,7 @@
 		B386167B1F1953D9001099FC /* AppStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		B386167D1F1953E2001099FC /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		B386167F1F1953E7001099FC /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		B38616811F195442001099FC /* Store+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+Rx.swift"; sourceTree = "<group>"; };
+		B38616811F195442001099FC /* Redux+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Redux+Rx.swift"; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 				B38616701F1813D8001099FC /* Dispatch.swift */,
 				B38616721F1813E3001099FC /* Middleware.swift */,
 				B38616741F181EED001099FC /* EpicMiddleware.swift */,
-				B38616811F195442001099FC /* Store+Rx.swift */,
+				B38616811F195442001099FC /* Redux+Rx.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -530,7 +530,7 @@
 				B386166F1F1813CD001099FC /* Reducer.swift in Sources */,
 				B38616781F191E3C001099FC /* PoliticiansViewController.swift in Sources */,
 				B386164A1F17C238001099FC /* AppSessionConfigurationFactory.swift in Sources */,
-				B38616821F195442001099FC /* Store+Rx.swift in Sources */,
+				B38616821F195442001099FC /* Redux+Rx.swift in Sources */,
 				B386164C1F17C28D001099FC /* APIDefaults.swift in Sources */,
 				B38445CA1F12FC5200D758BA /* PoliticiansAction.swift in Sources */,
 			);

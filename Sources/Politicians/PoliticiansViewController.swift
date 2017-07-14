@@ -1,7 +1,13 @@
 import UIKit
+import RxSwift
 
 final class PoliticiansViewController: UIViewController {
-    init() {
+    fileprivate let actionsSubject = PublishSubject<Action>()
+    private let state: Observable<PoliticiansState>
+    private let disposeBag = DisposeBag()
+
+    init(state: Observable<PoliticiansState>) {
+        self.state = state
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -12,5 +18,18 @@ final class PoliticiansViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        actionsSubject.onNext(PoliticiansAction.startLoading)
+
+        state
+            .subscribe(onNext: { [unowned self] politicians in
+                self.title = politicians.data.first?.name
+            })
+            .disposed(by: disposeBag)
+    }
+}
+
+extension Reactive where Base == PoliticiansViewController {
+    var actions: Observable<Action> {
+        return base.actionsSubject.asObservable()
     }
 }
