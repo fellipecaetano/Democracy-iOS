@@ -32,6 +32,8 @@
 		B38616711F1813D8001099FC /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616701F1813D8001099FC /* Dispatch.swift */; };
 		B38616731F1813E3001099FC /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616721F1813E3001099FC /* Middleware.swift */; };
 		B38616751F181EED001099FC /* EpicMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616741F181EED001099FC /* EpicMiddleware.swift */; };
+		B38616781F191E3C001099FC /* PoliticiansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616771F191E3C001099FC /* PoliticiansViewController.swift */; };
+		B386167A1F195111001099FC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616791F195111001099FC /* AppRouter.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -82,6 +84,8 @@
 		B38616701F1813D8001099FC /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		B38616721F1813E3001099FC /* Middleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		B38616741F181EED001099FC /* EpicMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpicMiddleware.swift; sourceTree = "<group>"; };
+		B38616771F191E3C001099FC /* PoliticiansViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansViewController.swift; sourceTree = "<group>"; };
+		B38616791F195111001099FC /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 		B38445C01F12EDA200D758BA /* Politicians */ = {
 			isa = PBXGroup;
 			children = (
+				B38616761F191E1B001099FC /* ViewControllers */,
 				B38445C41F12EE1700D758BA /* Models */,
 				B38445C11F12EDEB00D758BA /* Redux */,
 			);
@@ -235,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				B38616481F17C22F001099FC /* Networking */,
+				B38616791F195111001099FC /* AppRouter.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -246,6 +252,14 @@
 				B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B38616761F191E1B001099FC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B38616771F191E3C001099FC /* PoliticiansViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B390A5D61F134F79006CB64A /* Support */ = {
@@ -489,6 +503,7 @@
 				B38616441F17C0C5001099FC /* FunctionalUtils.swift in Sources */,
 				B38616421F17B4B5001099FC /* PoliticiansEpics.swift in Sources */,
 				B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */,
+				B386167A1F195111001099FC /* AppRouter.swift in Sources */,
 				B38616461F17C0F2001099FC /* RxSwift+Unwrap.swift in Sources */,
 				B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */,
 				B386166B1F181117001099FC /* Store.swift in Sources */,
@@ -498,6 +513,7 @@
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
 				B386166F1F1813CD001099FC /* Reducer.swift in Sources */,
+				B38616781F191E3C001099FC /* PoliticiansViewController.swift in Sources */,
 				B386164A1F17C238001099FC /* AppSessionConfigurationFactory.swift in Sources */,
 				B386164C1F17C28D001099FC /* APIDefaults.swift in Sources */,
 				B38445CA1F12FC5200D758BA /* PoliticiansAction.swift in Sources */,
