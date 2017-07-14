@@ -1,7 +1,7 @@
 import RxSwift
 
 extension Reactive where Base == UITableView {
-    func rows<S: Sequence,
+    func items<S: Sequence,
               C: UITableViewCell,
               O: ObservableType>
         (ofType cellType: C.Type)

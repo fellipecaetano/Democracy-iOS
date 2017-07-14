@@ -14,7 +14,8 @@ final class PoliticiansView: UIView {
     }
 
     private func setUp() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PoliticianTableViewCell")
+        tableView.register(PoliticianTableViewCell.self)
+        tableView.rowHeight = PoliticianTableViewCell.preferredHeight
         addSubview(tableView)
         createConstraints()
     }

@@ -3,7 +3,7 @@ import RxSwift
 
 final class PoliticiansViewController: UIViewController {
     fileprivate let actionsSubject = PublishSubject<Action>()
-    private let state: Observable<PoliticiansState>
+    private let viewModel: PoliticiansViewModel
     private let disposeBag = DisposeBag()
 
     var smartView: PoliticiansView! {
@@ -14,8 +14,8 @@ final class PoliticiansViewController: UIViewController {
         return smartView.tableView
     }
 
-    init(state: Observable<PoliticiansState>) {
-        self.state = state
+    init(viewModel: PoliticiansViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -33,16 +33,23 @@ final class PoliticiansViewController: UIViewController {
     }
 
     private func bind() {
-        Observable<Action>.just(PoliticiansAction.startLoading)
-            .bind(to: actionsSubject)
+        let bindings = viewModel.transform()
+
+        bindings
+            .actions
+            .drive(actionsSubject)
             .disposed(by: disposeBag)
 
-        state
-            .map({ $0.data })
-            .bind(to: tableView.rx.items(cellIdentifier: "PoliticianTableViewCell", cellType: UITableViewCell.self)) { index, politician, cell in
-                cell.textLabel?.text = politician.name
+        bindings
+            .items
+            .drive(tableView.rx.items(ofType: PoliticianTableViewCell.self)) { [unowned self] _, item, cell in
+                self.configureCell(cell, with: item)
             }
             .disposed(by: disposeBag)
+    }
+
+    private func configureCell(_ cell: PoliticianTableViewCell, with item: PoliticianItem) {
+        cell.render(item: item)
     }
 }
 

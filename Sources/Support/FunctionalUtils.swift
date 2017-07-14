@@ -15,3 +15,9 @@ func compose<T>(_ fns: [(T) -> T]) -> (T) -> T {
         fns.reversed().reduce(t, { v, f in f(v) })
     }
 }
+
+func map<T, U>(_ fn: @escaping (T) -> U) -> ([T]) -> [U] {
+    return { array in
+        array.map(fn)
+    }
+}

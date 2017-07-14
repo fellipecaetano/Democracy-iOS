@@ -21,7 +21,8 @@ final class AppRouter {
 private final class ViewControllerFactory {
     static func politicians(store: AppStore) -> PoliticiansViewController {
         let state = store.map({ $0.politicians })
-        let viewController =  PoliticiansViewController(state: state)
+        let viewModel = PoliticiansViewModelFactory.viewModel(state: state)
+        let viewController = PoliticiansViewController(viewModel: viewModel)
         store.connect(to: viewController.rx.actions, of: viewController)
         return viewController
     }
