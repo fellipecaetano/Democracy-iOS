@@ -3,6 +3,7 @@ import UIKit
 final class AppRouter {
     private let window = UIWindow(frame: UIScreen.main.bounds)
     private let navigationController = UINavigationController()
+    private let store = AppStore()
 
     func start() {
         window.rootViewController = navigationController
