@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Cartography.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Fakery-Faker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -72,7 +77,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0A1C548AC019EBD8501B02D3BA0A8131</key>
+		<key>1D47205DE3F2A0D74613D45B6DFBFDF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -87,7 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5FD1387110ECAAA2E16F96EB563B9233</key>
+		<key>544212980401A6DA7806F65EAD8C6637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70A0B8FD049E2400B42F8998E02A09F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +107,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9682FFEBD1DD73422EC9E28E7333E80F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9DFDAEC511D20A917286BAA8AE0F50BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A544E39E0F6E338F5269CE0982DBE208</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,17 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5C5BF2226C7E9270A7AA0AC880008B6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C498EBDBE0A2EF6EF719EC8718286AD6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C742D32E0580A13DC3416C3D0C84C41A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,7 +142,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E760FF2A57D262F538E9E33B433576B0</key>
+		<key>EAC80B9B675AB4092F6D72BF3593E340</key>
 		<dict>
 			<key>primary</key>
 			<true/>
