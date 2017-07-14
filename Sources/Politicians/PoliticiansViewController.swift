@@ -6,6 +6,14 @@ final class PoliticiansViewController: UIViewController {
     private let state: Observable<PoliticiansState>
     private let disposeBag = DisposeBag()
 
+    var smartView: PoliticiansView! {
+        return view as? PoliticiansView
+    }
+
+    var tableView: UITableView {
+        return smartView.tableView
+    }
+
     init(state: Observable<PoliticiansState>) {
         self.state = state
         super.init(nibName: nil, bundle: nil)
@@ -15,15 +23,26 @@ final class PoliticiansViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+    override func loadView() {
+        view = PoliticiansView(frame: UIScreen.main.bounds)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
-        actionsSubject.onNext(PoliticiansAction.startLoading)
+        bind()
+    }
+
+    private func bind() {
+        Observable<Action>.just(PoliticiansAction.startLoading)
+            .bind(to: actionsSubject)
+            .disposed(by: disposeBag)
 
         state
-            .subscribe(onNext: { [unowned self] politicians in
-                self.title = politicians.data.first?.name
-            })
+            .map({ $0.data })
+            .bind(to: tableView.rx.items(cellIdentifier: "PoliticianTableViewCell", cellType: UITableViewCell.self)) { index, politician, cell in
+                cell.textLabel?.text = politician.name
+                cell.detailTextLabel?.text = "\(politician.partyAcronym)-\(politician.federativeUnit)"
+            }
             .disposed(by: disposeBag)
     }
 }
