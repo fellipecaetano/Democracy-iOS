@@ -44,6 +44,8 @@
 		B386168B1F1965E1001099FC /* PoliticianTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386168A1F1965E1001099FC /* PoliticianTableViewCell.swift */; };
 		B386168E1F196973001099FC /* PoliticiansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386168D1F196973001099FC /* PoliticiansViewModel.swift */; };
 		B38616911F1969B5001099FC /* PoliticianItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616901F1969B5001099FC /* PoliticianItem.swift */; };
+		B38616931F198FF2001099FC /* PoliticiansViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616921F198FF2001099FC /* PoliticiansViewState.swift */; };
+		B38616951F1AD15F001099FC /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616941F1AD15F001099FC /* EmptyStateView.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -106,6 +108,8 @@
 		B386168A1F1965E1001099FC /* PoliticianTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticianTableViewCell.swift; sourceTree = "<group>"; };
 		B386168D1F196973001099FC /* PoliticiansViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansViewModel.swift; sourceTree = "<group>"; };
 		B38616901F1969B5001099FC /* PoliticianItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticianItem.swift; sourceTree = "<group>"; };
+		B38616921F198FF2001099FC /* PoliticiansViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansViewState.swift; sourceTree = "<group>"; };
+		B38616941F1AD15F001099FC /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				B38445C51F12EE1C00D758BA /* Politician.swift */,
 				B38445C11F12EDEB00D758BA /* Redux */,
 				B38616901F1969B5001099FC /* PoliticianItem.swift */,
+				B38616921F198FF2001099FC /* PoliticiansViewState.swift */,
 			);
 			path = Politicians;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 				B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */,
 				B38616861F1963E3001099FC /* CellReuse.swift */,
 				B38616881F196560001099FC /* CellReuse+Rx.swift */,
+				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				B38616521F17C617001099FC /* Epics.swift in Sources */,
 				B38616731F1813E3001099FC /* Middleware.swift in Sources */,
 				B38616441F17C0C5001099FC /* FunctionalUtils.swift in Sources */,
+				B38616931F198FF2001099FC /* PoliticiansViewState.swift in Sources */,
 				B38616421F17B4B5001099FC /* PoliticiansEpics.swift in Sources */,
 				B38445D21F131CC000D758BA /* Error+PatternMatching.swift in Sources */,
 				B386167A1F195111001099FC /* AppRouter.swift in Sources */,
@@ -534,6 +541,7 @@
 				B38616711F1813D8001099FC /* Dispatch.swift in Sources */,
 				B38445BA1F12ED0100D758BA /* Request.swift in Sources */,
 				B38445C61F12EE1C00D758BA /* Politician.swift in Sources */,
+				B38616951F1AD15F001099FC /* EmptyStateView.swift in Sources */,
 				B38616801F1953E7001099FC /* AppReducer.swift in Sources */,
 				B386166F1F1813CD001099FC /* Reducer.swift in Sources */,
 				B38616781F191E3C001099FC /* PoliticiansViewController.swift in Sources */,

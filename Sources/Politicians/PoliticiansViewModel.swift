@@ -7,6 +7,7 @@ struct PoliticiansViewModel {
     struct Output {
         let items: Driver<[PoliticianItem]>
         let actions: Driver<Action>
+        let viewState: Driver<PoliticiansViewState>
     }
 
     let transform: (Input) -> Output
@@ -20,21 +21,18 @@ struct PoliticiansViewModelFactory {
     static func viewModel(state: Observable<PoliticiansState>) -> PoliticiansViewModel {
         return PoliticiansViewModel { _ in
             PoliticiansViewModel.Output(
-                items: Transforms.items(state: state)
-                    .asDriver(onErrorJustReturn: []),
+                items: state
+                    .map({ $0.data })
+                    .map(map(PoliticianItemFactory.item)),
 
                 actions: Observable<Action>
                     .just(PoliticiansAction.startLoading)
-                    .asDriver(onErrorDriveWith: .empty())
+                    .asDriver(onErrorDriveWith: .empty()),
+
+                viewState: state
+                    .map(PoliticiansViewStateFactory.viewState)
+                    .asDriver(onErrorRecover: pipe(PoliticiansViewState.failed, Driver.just))
             )
         }
-    }
-}
-
-private struct Transforms {
-    static func items(state: Observable<PoliticiansState>) -> Observable<[PoliticianItem]> {
-        return state
-            .map({ $0.data })
-            .map(map(PoliticianItemFactory.item))
     }
 }
