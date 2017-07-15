@@ -2,7 +2,7 @@ import UIKit
 import Cartography
 
 class PoliticianTableViewCell: UITableViewCell, Reusable {
-    static let preferredHeight: CGFloat = 64
+    static let preferredHeight = Dimensions.preferredHeight
 
     private let nameLabel: UILabel = {
         let label = UILabel()
@@ -51,7 +51,7 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
 
     private func constrainIdentificationView() {
         constrain(identificationView) { identificationView in
-            identificationView.edges == inset(identificationView.superview!.edges, 16, 8)
+            identificationView.edges == inset(identificationView.superview!.edges, Dimensions.insets)
         }
     }
 
@@ -71,4 +71,9 @@ private struct Style {
         static let name = UIFont.systemFont(ofSize: 17)
         static let details = UIFont.systemFont(ofSize: 12)
     }
+}
+
+private struct Dimensions {
+    static let insets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+    static let preferredHeight: CGFloat = 64
 }

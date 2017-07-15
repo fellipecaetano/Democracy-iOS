@@ -1,0 +1,3 @@
+senators = "Senadores";
+no_data_to_show = "Não encontramos dados para exibir.";
+something_is_wrong = "Enfrentamos um problema ao buscar dados para exibir.";

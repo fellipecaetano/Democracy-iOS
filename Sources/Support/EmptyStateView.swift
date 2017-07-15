@@ -20,6 +20,8 @@ final class EmptyStateView: UIView {
         return label
     }()
 
+    private let contentView = UIView()
+
     init (icon: UIImage, message: String) {
         self.icon = icon
         self.message = message
@@ -34,22 +36,28 @@ final class EmptyStateView: UIView {
     private func setUp() {
         setUpIconImageView()
         setUpMessageLabel()
+        setUpContentView()
+        addSubview(contentView)
         createConstraints()
     }
 
     private func setUpIconImageView() {
         iconImageView.image = icon
-        addSubview(iconImageView)
     }
 
     private func setUpMessageLabel() {
         messageLabel.text = message
-        addSubview(messageLabel)
+    }
+
+    private func setUpContentView() {
+        contentView.addSubview(messageLabel)
+        contentView.addSubview(iconImageView)
     }
 
     private func createConstraints() {
         constrainIconImageView()
         constrainMessageLabel()
+        constrainContentView()
     }
 
     private func constrainIconImageView() {
@@ -64,7 +72,14 @@ final class EmptyStateView: UIView {
             messageLabel.left == messageLabel.superview!.left
             messageLabel.right == messageLabel.superview!.right
             messageLabel.bottom == messageLabel.superview!.bottom
-            messageLabel.top == iconImageView.bottom + 16
+            messageLabel.top == iconImageView.bottom + Dimensions.iconMargin
+        }
+    }
+
+    private func constrainContentView() {
+        constrain(contentView) { contentView in
+            contentView.width == Dimensions.width
+            contentView.center == contentView.superview!.center
         }
     }
 }
@@ -77,4 +92,9 @@ private struct Style {
     struct Fonts {
         static let message = UIFont.systemFont(ofSize: 13)
     }
+}
+
+private struct Dimensions {
+    static let width: CGFloat = 240
+    static let iconMargin: CGFloat = 16
 }

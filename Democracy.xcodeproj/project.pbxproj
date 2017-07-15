@@ -46,6 +46,9 @@
 		B38616911F1969B5001099FC /* PoliticianItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616901F1969B5001099FC /* PoliticianItem.swift */; };
 		B38616931F198FF2001099FC /* PoliticiansViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616921F198FF2001099FC /* PoliticiansViewState.swift */; };
 		B38616951F1AD15F001099FC /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616941F1AD15F001099FC /* EmptyStateView.swift */; };
+		B38616981F1ADB51001099FC /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616971F1ADB51001099FC /* Asset.swift */; };
+		B386169B1F1ADCB1001099FC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B386169A1F1ADCB1001099FC /* Localizable.strings */; };
+		B386169D1F1ADD38001099FC /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = B386169C1F1ADD38001099FC /* L10n.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -78,7 +81,7 @@
 		B38445B91F12ED0100D758BA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Request.swift"; sourceTree = "<group>"; };
 		B38445C21F12EDF500D758BA /* PoliticiansState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansState.swift; sourceTree = "<group>"; };
-		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Politician.swift; path = Politician.swift; sourceTree = "<group>"; };
+		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Politician.swift; sourceTree = "<group>"; };
 		B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducer.swift; sourceTree = "<group>"; };
 		B38445C91F12FC5200D758BA /* PoliticiansAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansAction.swift; sourceTree = "<group>"; };
 		B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducerTests.swift; sourceTree = "<group>"; };
@@ -109,7 +112,10 @@
 		B386168D1F196973001099FC /* PoliticiansViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansViewModel.swift; sourceTree = "<group>"; };
 		B38616901F1969B5001099FC /* PoliticianItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticianItem.swift; sourceTree = "<group>"; };
 		B38616921F198FF2001099FC /* PoliticiansViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansViewState.swift; sourceTree = "<group>"; };
-		B38616941F1AD15F001099FC /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		B38616941F1AD15F001099FC /* EmptyStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmptyStateView.swift; path = ../Support/EmptyStateView.swift; sourceTree = "<group>"; };
+		B38616971F1ADB51001099FC /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		B386169A1F1ADCB1001099FC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		B386169C1F1ADD38001099FC /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				EF06A1A70903DDF6F47B5DC5 /* Frameworks */,
 				23D0DBA270800BB3BA64F08D /* Pods */,
 				B30EDF981F09C7C7006BDA24 /* Products */,
+				B38616991F1ADB9C001099FC /* Resources */,
 				B30EDF991F09C7C7006BDA24 /* Sources */,
 				B30EDFAE1F09C7C8006BDA24 /* Tests */,
 			);
@@ -179,9 +186,7 @@
 				B38445BD1F12ED7D00D758BA /* Redux */,
 				B38445D01F131CB500D758BA /* Support */,
 				B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */,
-				B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */,
 				B30EDFA61F09C7C7006BDA24 /* Info.plist */,
-				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -253,7 +258,6 @@
 				B38445B81F12ECDC00D758BA /* Networking */,
 				B38616881F196560001099FC /* CellReuse+Rx.swift */,
 				B38616861F1963E3001099FC /* CellReuse.swift */,
-				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
 				B38445D11F131CC000D758BA /* Error+PatternMatching.swift */,
 				B38616431F17C0C5001099FC /* FunctionalUtils.swift */,
 				B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */,
@@ -264,7 +268,9 @@
 		B38616471F17C227001099FC /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				B386169E1F1ADDFA001099FC /* Views */,
 				B38616481F17C22F001099FC /* Networking */,
+				B38616961F1ADB3C001099FC /* Resources */,
 				B386167F1F1953E7001099FC /* AppReducer.swift */,
 				B38616791F195111001099FC /* AppRouter.swift */,
 				B386167D1F1953E2001099FC /* AppState.swift */,
@@ -280,6 +286,33 @@
 				B38616491F17C238001099FC /* AppSessionConfigurationFactory.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		B38616961F1ADB3C001099FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B386169C1F1ADD38001099FC /* L10n.swift */,
+				B38616971F1ADB51001099FC /* Asset.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B38616991F1ADB9C001099FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */,
+				B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */,
+				B386169A1F1ADCB1001099FC /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B386169E1F1ADDFA001099FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B390A5D61F134F79006CB64A /* Support */ = {
@@ -403,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */,
+				B386169B1F1ADCB1001099FC /* Localizable.strings in Resources */,
 				B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +553,7 @@
 				B38445C81F12EF2900D758BA /* PoliticiansReducer.swift in Sources */,
 				B38616891F196560001099FC /* CellReuse+Rx.swift in Sources */,
 				B386166D1F18114C001099FC /* Action.swift in Sources */,
+				B386169D1F1ADD38001099FC /* L10n.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
 				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
 				B38616521F17C617001099FC /* Epics.swift in Sources */,
@@ -532,6 +567,7 @@
 				B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */,
 				B386168B1F1965E1001099FC /* PoliticianTableViewCell.swift in Sources */,
 				B386166B1F181117001099FC /* Store.swift in Sources */,
+				B38616981F1ADB51001099FC /* Asset.swift in Sources */,
 				B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */,
 				B38616851F195BE7001099FC /* PoliticiansView.swift in Sources */,
 				B38616911F1969B5001099FC /* PoliticianItem.swift in Sources */,

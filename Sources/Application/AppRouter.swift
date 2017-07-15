@@ -23,6 +23,7 @@ private final class ViewControllerFactory {
         let state = store.map({ $0.politicians })
         let viewModel = PoliticiansViewModelFactory.viewModel(state: state)
         let viewController = PoliticiansViewController(viewModel: viewModel)
+        viewController.title = L10n.senators.string
         store.connect(to: viewController.rx.actions, of: viewController)
         return viewController
     }

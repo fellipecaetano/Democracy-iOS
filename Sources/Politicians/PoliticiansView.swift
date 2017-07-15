@@ -12,6 +12,9 @@ final class PoliticiansView: UIView {
         return tableView
     }()
 
+    fileprivate let noDataView = EmptyStateView(icon: Asset.warningIcon.image, message: L10n.noDataToShow.string)
+    fileprivate let errorView = EmptyStateView(icon: Asset.errorIcon.image, message: L10n.somethingIsWrong.string)
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
@@ -60,18 +63,18 @@ private extension PoliticiansView {
     }
 
     private func renderWhenEmpty() {
-        print("empty")
+        tableView.backgroundView = noDataView
     }
 
     private func renderWhenFailed() {
-        print("failed")
+        tableView.backgroundView = errorView
     }
 
     private func renderWhenLoading() {
-        print("loading")
+        tableView.backgroundView = nil
     }
 
     private func renderWhenLoaded() {
-        print("loaded")
+        tableView.backgroundView = nil
     }
 }
