@@ -7,7 +7,7 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.font = Style.Fonts.name
-        label.textColor = Style.Color.name
+        label.textColor = Style.Colors.name
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -15,7 +15,7 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
     private let partyLabel: UILabel = {
         let label = UILabel()
         label.font = Style.Fonts.details
-        label.textColor = Style.Color.details
+        label.textColor = Style.Colors.details
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -62,7 +62,7 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
 }
 
 private struct Style {
-    struct Color {
+    struct Colors {
         static let name = UIColor.darkText
         static let details = UIColor.lightGray
     }

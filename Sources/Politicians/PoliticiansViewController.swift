@@ -46,6 +46,11 @@ final class PoliticiansViewController: UIViewController {
                 self.configureCell(cell, with: item)
             }
             .disposed(by: disposeBag)
+
+        bindings
+            .viewState
+            .drive(smartView.rx.state)
+            .disposed(by: disposeBag)
     }
 
     private func configureCell(_ cell: PoliticianTableViewCell, with item: PoliticianItem) {

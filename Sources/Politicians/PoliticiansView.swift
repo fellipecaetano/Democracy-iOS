@@ -1,5 +1,7 @@
 import UIKit
 import Cartography
+import RxSwift
+import RxCocoa
 
 final class PoliticiansView: UIView {
     let tableView: UITableView = {
@@ -32,5 +34,44 @@ final class PoliticiansView: UIView {
         constrain(tableView) { tableView in
             tableView.edges == tableView.superview!.edges
         }
+    }
+}
+
+extension Reactive where Base: PoliticiansView {
+    var state: UIBindingObserver<PoliticiansView, PoliticiansViewState> {
+        return UIBindingObserver(UIElement: base) { view, state in
+            view.render(state: state)
+        }
+    }
+}
+
+private extension PoliticiansView {
+    func render(state: PoliticiansViewState) {
+        switch state {
+        case .empty:
+            renderWhenEmpty()
+        case .failed:
+            renderWhenFailed()
+        case .loading:
+            renderWhenLoading()
+        case .loaded:
+            renderWhenLoaded()
+        }
+    }
+
+    private func renderWhenEmpty() {
+        print("empty")
+    }
+
+    private func renderWhenFailed() {
+        print("failed")
+    }
+
+    private func renderWhenLoading() {
+        print("loading")
+    }
+
+    private func renderWhenLoaded() {
+        print("loaded")
     }
 }

@@ -23,7 +23,8 @@ struct PoliticiansViewModelFactory {
             PoliticiansViewModel.Output(
                 items: state
                     .map({ $0.data })
-                    .map(map(PoliticianItemFactory.item)),
+                    .map(map(PoliticianItemFactory.item))
+                    .asDriver(onErrorDriveWith: .empty()),
 
                 actions: Observable<Action>
                     .just(PoliticiansAction.startLoading)
@@ -31,7 +32,7 @@ struct PoliticiansViewModelFactory {
 
                 viewState: state
                     .map(PoliticiansViewStateFactory.viewState)
-                    .asDriver(onErrorRecover: pipe(PoliticiansViewState.failed, Driver.just))
+                    .asDriver(onErrorJustReturn: .failed)
             )
         }
     }

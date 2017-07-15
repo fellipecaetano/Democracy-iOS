@@ -78,7 +78,7 @@
 		B38445B91F12ED0100D758BA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Request.swift"; sourceTree = "<group>"; };
 		B38445C21F12EDF500D758BA /* PoliticiansState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansState.swift; sourceTree = "<group>"; };
-		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Politician.swift; path = Models/Politician.swift; sourceTree = "<group>"; };
+		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Politician.swift; path = Politician.swift; sourceTree = "<group>"; };
 		B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducer.swift; sourceTree = "<group>"; };
 		B38445C91F12FC5200D758BA /* PoliticiansAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansAction.swift; sourceTree = "<group>"; };
 		B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducerTests.swift; sourceTree = "<group>"; };
@@ -209,14 +209,14 @@
 		B38445BD1F12ED7D00D758BA /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				B38616511F17C617001099FC /* Epics.swift */,
-				B386166A1F181117001099FC /* Store.swift */,
 				B386166C1F18114C001099FC /* Action.swift */,
-				B386166E1F1813CD001099FC /* Reducer.swift */,
 				B38616701F1813D8001099FC /* Dispatch.swift */,
-				B38616721F1813E3001099FC /* Middleware.swift */,
 				B38616741F181EED001099FC /* EpicMiddleware.swift */,
+				B38616511F17C617001099FC /* Epics.swift */,
+				B38616721F1813E3001099FC /* Middleware.swift */,
+				B386166E1F1813CD001099FC /* Reducer.swift */,
 				B38616811F195442001099FC /* Redux+Rx.swift */,
+				B386166A1F181117001099FC /* Store.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -224,13 +224,13 @@
 		B38445C01F12EDA200D758BA /* Politicians */ = {
 			isa = PBXGroup;
 			children = (
-				B386168D1F196973001099FC /* PoliticiansViewModel.swift */,
-				B38616841F195BE7001099FC /* PoliticiansView.swift */,
-				B386168A1F1965E1001099FC /* PoliticianTableViewCell.swift */,
-				B38616771F191E3C001099FC /* PoliticiansViewController.swift */,
-				B38445C51F12EE1C00D758BA /* Politician.swift */,
 				B38445C11F12EDEB00D758BA /* Redux */,
+				B38445C51F12EE1C00D758BA /* Politician.swift */,
 				B38616901F1969B5001099FC /* PoliticianItem.swift */,
+				B386168A1F1965E1001099FC /* PoliticianTableViewCell.swift */,
+				B38616841F195BE7001099FC /* PoliticiansView.swift */,
+				B38616771F191E3C001099FC /* PoliticiansViewController.swift */,
+				B386168D1F196973001099FC /* PoliticiansViewModel.swift */,
 				B38616921F198FF2001099FC /* PoliticiansViewState.swift */,
 			);
 			path = Politicians;
@@ -251,12 +251,12 @@
 			isa = PBXGroup;
 			children = (
 				B38445B81F12ECDC00D758BA /* Networking */,
+				B38616881F196560001099FC /* CellReuse+Rx.swift */,
+				B38616861F1963E3001099FC /* CellReuse.swift */,
+				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
 				B38445D11F131CC000D758BA /* Error+PatternMatching.swift */,
 				B38616431F17C0C5001099FC /* FunctionalUtils.swift */,
 				B38616451F17C0F2001099FC /* RxSwift+Unwrap.swift */,
-				B38616861F1963E3001099FC /* CellReuse.swift */,
-				B38616881F196560001099FC /* CellReuse+Rx.swift */,
-				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -265,10 +265,10 @@
 			isa = PBXGroup;
 			children = (
 				B38616481F17C22F001099FC /* Networking */,
-				B38616791F195111001099FC /* AppRouter.swift */,
-				B386167B1F1953D9001099FC /* AppStore.swift */,
-				B386167D1F1953E2001099FC /* AppState.swift */,
 				B386167F1F1953E7001099FC /* AppReducer.swift */,
+				B38616791F195111001099FC /* AppRouter.swift */,
+				B386167D1F1953E2001099FC /* AppState.swift */,
+				B386167B1F1953D9001099FC /* AppStore.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
