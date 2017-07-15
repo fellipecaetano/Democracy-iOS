@@ -12,6 +12,13 @@ final class PoliticiansView: UIView {
         return tableView
     }()
 
+    fileprivate let activityIndicator: UIActivityIndicatorView = {
+        let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        activityIndicator.color = Style.Colors.activityIndicator
+        activityIndicator.startAnimating()
+        return activityIndicator
+    }()
+
     fileprivate let noDataView = EmptyStateView(icon: Asset.warningIcon.image, message: L10n.noDataToShow.string)
     fileprivate let errorView = EmptyStateView(icon: Asset.errorIcon.image, message: L10n.somethingIsWrong.string)
 
@@ -71,10 +78,16 @@ private extension PoliticiansView {
     }
 
     private func renderWhenLoading() {
-        tableView.backgroundView = nil
+        tableView.backgroundView = activityIndicator
     }
 
     private func renderWhenLoaded() {
         tableView.backgroundView = nil
+    }
+}
+
+private struct Style {
+    struct Colors {
+        static let activityIndicator = UIColor(white: 140.0/255.0, alpha: 1)
     }
 }
