@@ -1,5 +1,7 @@
 import UIKit
 import Cartography
+import RxCocoa
+import RxSwift
 
 class PoliticianTableViewCell: UITableViewCell, Reusable {
     static let preferredHeight = Dimensions.preferredHeight
@@ -29,6 +31,14 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
         return stackView
     }()
 
+    fileprivate let followButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle(L10n.follow.string, for: .normal)
+        return button
+    }()
+
+    private(set) var disposeBag = DisposeBag()
+
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUp()
@@ -42,17 +52,34 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
         identificationView.addArrangedSubview(nameLabel)
         identificationView.addArrangedSubview(partyLabel)
         contentView.addSubview(identificationView)
+        contentView.addSubview(followButton)
         createConstraints()
     }
 
     private func createConstraints() {
         constrainIdentificationView()
+        constrainFollowButton()
     }
 
     private func constrainIdentificationView() {
         constrain(identificationView) { identificationView in
-            identificationView.edges == inset(identificationView.superview!.edges, Dimensions.insets)
+            identificationView.left == identificationView.superview!.left + Dimensions.identificationInsets.left
+            identificationView.top == identificationView.superview!.top + Dimensions.identificationInsets.top
+            identificationView.bottom == identificationView.superview!.bottom - Dimensions.identificationInsets.bottom
         }
+    }
+
+    private func constrainFollowButton() {
+        constrain(followButton, identificationView) { followButton, identificationView in
+            followButton.left == identificationView.right + Dimensions.identificationInsets.left
+            followButton.right == followButton.superview!.right - Dimensions.followButtonMargin
+            followButton.centerY == followButton.superview!.centerY
+        }
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        disposeBag = DisposeBag()
     }
 
     func render(item: PoliticianItem) {
@@ -74,6 +101,13 @@ private struct Style {
 }
 
 private struct Dimensions {
-    static let insets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
+    static let identificationInsets = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 8)
+    static let followButtonMargin: CGFloat = 16
     static let preferredHeight: CGFloat = 64
+}
+
+extension Reactive where Base == PoliticianTableViewCell {
+    var followButtonTap: ControlEvent<Void> {
+        return base.followButton.rx.tap
+    }
 }

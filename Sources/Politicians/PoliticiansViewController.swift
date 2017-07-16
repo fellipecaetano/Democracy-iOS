@@ -3,6 +3,7 @@ import RxSwift
 
 final class PoliticiansViewController: UIViewController {
     fileprivate let actionsSubject = PublishSubject<Action>()
+    fileprivate let followedIndexSubject = PublishSubject<Int>()
     private let viewModel: PoliticiansViewModel
     private let disposeBag = DisposeBag()
 
@@ -33,7 +34,11 @@ final class PoliticiansViewController: UIViewController {
     }
 
     private func bind() {
-        let bindings = viewModel.transform()
+        let bindings = viewModel.transform(
+            PoliticiansViewModel.Input(
+                followedIndex: followedIndexSubject.asObservable()
+            )
+        )
 
         bindings
             .actions
@@ -42,8 +47,8 @@ final class PoliticiansViewController: UIViewController {
 
         bindings
             .items
-            .drive(tableView.rx.items(ofType: PoliticianTableViewCell.self)) { [unowned self] _, item, cell in
-                self.configureCell(cell, with: item)
+            .drive(tableView.rx.items(ofType: PoliticianTableViewCell.self)) { [unowned self] index, item, cell in
+                self.configureCell(cell, at: index, with: item)
             }
             .disposed(by: disposeBag)
 
@@ -53,8 +58,9 @@ final class PoliticiansViewController: UIViewController {
             .disposed(by: disposeBag)
     }
 
-    private func configureCell(_ cell: PoliticianTableViewCell, with item: PoliticianItem) {
+    private func configureCell(_ cell: PoliticianTableViewCell, at index: Int, with item: PoliticianItem) {
         cell.render(item: item)
+        cell.rx.followButtonTap.asObservable().mapTo(index).bind(to: followedIndexSubject).disposed(by: cell.disposeBag)
     }
 }
 

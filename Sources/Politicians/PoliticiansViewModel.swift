@@ -2,7 +2,9 @@ import RxSwift
 import RxCocoa
 
 struct PoliticiansViewModel {
-    typealias Input = Void
+    struct Input {
+        let followedIndex: Observable<Int>
+    }
 
     struct Output {
         let items: Driver<[PoliticianItem]>
@@ -19,15 +21,14 @@ struct PoliticiansViewModel {
 
 struct PoliticiansViewModelFactory {
     static func viewModel(state: Observable<PoliticiansState>) -> PoliticiansViewModel {
-        return PoliticiansViewModel { _ in
+        return PoliticiansViewModel { input in
             PoliticiansViewModel.Output(
                 items: state
                     .map({ $0.data })
                     .map(map(PoliticianItemFactory.item))
                     .asDriver(onErrorDriveWith: .empty()),
 
-                actions: Observable<Action>
-                    .just(PoliticiansAction.startLoading)
+                actions: Observable.just(PoliticiansAction.startLoading)
                     .asDriver(onErrorDriveWith: .empty()),
 
                 viewState: state

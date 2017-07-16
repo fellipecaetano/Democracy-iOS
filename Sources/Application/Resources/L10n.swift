@@ -7,6 +7,10 @@ import Foundation
 
 // swiftlint:disable type_body_length
 enum L10n {
+  /// Seguir
+  case follow
+  /// Seguindo
+  case following
   /// Não encontramos dados para exibir.
   case noDataToShow
   /// Senadores
@@ -21,6 +25,10 @@ extension L10n: CustomStringConvertible {
 
   var string: String {
     switch self {
+      case .follow:
+        return L10n.tr(key: "follow")
+      case .following:
+        return L10n.tr(key: "following")
       case .noDataToShow:
         return L10n.tr(key: "no_data_to_show")
       case .senators:
