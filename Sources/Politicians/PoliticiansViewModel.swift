@@ -21,12 +21,16 @@ struct PoliticiansViewModel {
 
 struct PoliticiansViewModelFactory {
     static func viewModel(state: Observable<PoliticiansState>,
+                          followedPoliticians: Observable<[Politician]>,
                           scheduler: SchedulerType = MainScheduler.asyncInstance) -> PoliticiansViewModel {
         return PoliticiansViewModel { input in
             PoliticiansViewModel.Output(
-                items: state
-                    .map({ $0.data })
-                    .map(map(PoliticianItemFactory.item))
+                items: Observable.combineLatest(state.distinctUntilChanged(), followedPoliticians)
+                    .map({ state, followedPoliticians in
+                        state.data.map({ politician in
+                            PoliticianItemFactory.item(for: politician, isFollowed: followedPoliticians.contains(politician))
+                        })
+                    })
                     .asDriver(onErrorDriveWith: .empty()),
 
                 actions: Observable.combineLatest(state.distinctUntilChanged(),

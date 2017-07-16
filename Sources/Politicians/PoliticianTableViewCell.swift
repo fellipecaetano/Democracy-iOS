@@ -85,6 +85,12 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
     func render(item: PoliticianItem) {
         nameLabel.text = item.name
         partyLabel.text = item.party
+
+        if item.isFollowed {
+            followButton.setTitle(L10n.following.string, for: .normal)
+        } else {
+            followButton.setTitle(L10n.follow.string, for: .normal)
+        }
     }
 }
 
