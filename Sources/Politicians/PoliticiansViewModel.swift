@@ -20,7 +20,8 @@ struct PoliticiansViewModel {
 }
 
 struct PoliticiansViewModelFactory {
-    static func viewModel(state: Observable<PoliticiansState>) -> PoliticiansViewModel {
+    static func viewModel(state: Observable<PoliticiansState>,
+                          scheduler: SchedulerType = MainScheduler.asyncInstance) -> PoliticiansViewModel {
         return PoliticiansViewModel { input in
             PoliticiansViewModel.Output(
                 items: state
@@ -28,7 +29,12 @@ struct PoliticiansViewModelFactory {
                     .map(map(PoliticianItemFactory.item))
                     .asDriver(onErrorDriveWith: .empty()),
 
-                actions: Observable.just(PoliticiansAction.startLoading)
+                actions: Observable.combineLatest(state.distinctUntilChanged(),
+                                                  input.followedIndex)
+                    .map({ $0.data[$1] })
+                    .map(FollowedPoliticiansAction.mark)
+                    .startWith(PoliticiansAction.startLoading)
+                    .observeOn(scheduler)
                     .asDriver(onErrorDriveWith: .empty()),
 
                 viewState: state
