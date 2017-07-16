@@ -7,6 +7,6 @@ func PoliticiansReducer(state: PoliticiansState, action: Action) -> PoliticiansS
     case PoliticiansAction.fail(let error):
         return PoliticiansState(data: state.data, isLoading: false, error: error)
     default:
-        return .initial
+        return state
     }
 }
