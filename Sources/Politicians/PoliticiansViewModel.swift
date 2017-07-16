@@ -21,11 +21,11 @@ struct PoliticiansViewModel {
 
 struct PoliticiansViewModelFactory {
     static func viewModel(state: Observable<PoliticiansState>,
-                          followedPoliticians: Observable<[Politician]>,
-                          scheduler: SchedulerType = MainScheduler.asyncInstance) -> PoliticiansViewModel {
+                          followedPoliticians: Observable<[Politician]>) -> PoliticiansViewModel {
         return PoliticiansViewModel { input in
             PoliticiansViewModel.Output(
                 items: Observable.combineLatest(state.distinctUntilChanged(), followedPoliticians)
+                    .observeOn(ConcurrentDispatchQueueScheduler(qos: .userInteractive))
                     .map({ state, followedPoliticians in
                         state.data.map({ politician in
                             PoliticianItemFactory.item(for: politician, isFollowed: followedPoliticians.contains(politician))
@@ -38,7 +38,6 @@ struct PoliticiansViewModelFactory {
                     .map({ $0.data[$1] })
                     .map(FollowedPoliticiansAction.mark)
                     .startWith(PoliticiansAction.startLoading)
-                    .observeOn(scheduler)
                     .asDriver(onErrorDriveWith: .empty()),
 
                 viewState: state
