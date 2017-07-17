@@ -74,6 +74,7 @@
 /* Begin PBXFileReference section */
 		296DC85D24525959AEFBB022 /* Pods-DemocracyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		501E99DFEC72A8D1D2D26953 /* Pods_DemocracyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemocracyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B307A2441F1D3E2600E87EEE /* RxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RxSwift.playground; sourceTree = "<group>"; };
 		B30EDF971F09C7C7006BDA24 /* Democracy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Democracy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30EDF9A1F09C7C7006BDA24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -332,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				B38616B41F1D3B76001099FC /* Redux.playground */,
+				B307A2441F1D3E2600E87EEE /* RxSwift.playground */,
 			);
 			name = Playgrounds;
 			sourceTree = "<group>";
