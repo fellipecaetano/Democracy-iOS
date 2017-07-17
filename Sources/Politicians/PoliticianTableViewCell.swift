@@ -49,6 +49,7 @@ class PoliticianTableViewCell: UITableViewCell, Reusable {
     }
 
     private func setUp() {
+        selectionStyle = .none
         identificationView.addArrangedSubview(nameLabel)
         identificationView.addArrangedSubview(partyLabel)
         contentView.addSubview(identificationView)
