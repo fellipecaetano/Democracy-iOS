@@ -127,6 +127,7 @@
 		B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowedPoliticiansReducerTests.swift; sourceTree = "<group>"; };
 		B38616AB1F1C4D26001099FC /* PoliticiansNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansNetworking.swift; sourceTree = "<group>"; };
 		B38616AD1F1C51D4001099FC /* DataRequest+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+Unbox.swift"; sourceTree = "<group>"; };
+		B38616B41F1D3B76001099FC /* Redux.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Redux.playground; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -170,6 +171,7 @@
 		B30EDF8E1F09C7C7006BDA24 = {
 			isa = PBXGroup;
 			children = (
+				B38616B31F1D3B69001099FC /* Playgrounds */,
 				EF06A1A70903DDF6F47B5DC5 /* Frameworks */,
 				23D0DBA270800BB3BA64F08D /* Pods */,
 				B30EDF981F09C7C7006BDA24 /* Products */,
@@ -327,6 +329,14 @@
 				B38616941F1AD15F001099FC /* EmptyStateView.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		B38616B31F1D3B69001099FC /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				B38616B41F1D3B76001099FC /* Redux.playground */,
+			);
+			name = Playgrounds;
 			sourceTree = "<group>";
 		};
 		B390A5D61F134F79006CB64A /* Support */ = {
