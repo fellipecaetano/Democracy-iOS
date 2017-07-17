@@ -20,6 +20,8 @@ final class AppRouter {
 
 private final class ViewControllerFactory {
     static func politicians() -> PoliticiansViewController {
-        return PoliticiansViewController()
+        let viewController = PoliticiansViewController()
+        viewController.title = L10n.senators.string
+        return viewController
     }
 }

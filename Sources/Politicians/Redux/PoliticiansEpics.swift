@@ -1,9 +1,16 @@
 import RxSwift
 import Alamofire
+import RxAlamofire
 
 func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
     let sessionManager = SessionManager(configuration: AppSessionConfigurationFactory.api())
-    return LoadPoliticiansEpic(actions: actions, values: sessionManager.rx.value(request:))
+
+    return LoadPoliticiansEpic(
+        actions: actions,
+        values: { request in
+            sessionManager.request(request).rx.value()
+        }
+    )
 }
 
 func LoadPoliticiansEpic(actions: Observable<Action>,
