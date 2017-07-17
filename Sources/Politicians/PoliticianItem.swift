@@ -5,11 +5,11 @@ struct PoliticianItem {
 }
 
 struct PoliticianItemFactory {
-    static func item(for politician: Politician, isFollowed: Bool) -> PoliticianItem {
+    static func item(for politician: Politician) -> PoliticianItem {
         return PoliticianItem(
             name: politician.name,
             party: party(of: politician),
-            isFollowed: isFollowed
+            isFollowed: false
         )
     }
 }
