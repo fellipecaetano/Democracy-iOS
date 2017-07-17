@@ -13,13 +13,13 @@ final class AppRouter {
     }
 
     private func showInitialViewController() {
-        let viewController = ViewControllerFactory.politicians()
+        let viewController = ViewControllerFactory.politicians(store: store)
         navigationController.pushViewController(viewController, animated: false)
     }
 }
 
 private final class ViewControllerFactory {
-    static func politicians() -> PoliticiansViewController {
+    static func politicians(store: AppStore) -> PoliticiansViewController {
         let viewController = PoliticiansViewController()
         viewController.title = L10n.senators.string
         return viewController
