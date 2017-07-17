@@ -12,7 +12,6 @@
 		B30EDFA21F09C7C7006BDA24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA11F09C7C7006BDA24 /* Assets.xcassets */; };
 		B30EDFA51F09C7C7006BDA24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30EDFA31F09C7C7006BDA24 /* LaunchScreen.storyboard */; };
 		B38445BA1F12ED0100D758BA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445B91F12ED0100D758BA /* Request.swift */; };
-		B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */; };
 		B38445C31F12EDF500D758BA /* PoliticiansState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445C21F12EDF500D758BA /* PoliticiansState.swift */; };
 		B38445C61F12EE1C00D758BA /* Politician.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445C51F12EE1C00D758BA /* Politician.swift */; };
 		B38445C81F12EF2900D758BA /* PoliticiansReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */; };
@@ -54,11 +53,11 @@
 		B38616A61F1AE710001099FC /* ArrayModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A51F1AE710001099FC /* ArrayModifiers.swift */; };
 		B38616A81F1AEFCF001099FC /* RxSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A71F1AEFCF001099FC /* RxSwiftExtensions.swift */; };
 		B38616AA1F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */; };
+		B38616AE1F1C51D4001099FC /* DataRequest+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616AD1F1C51D4001099FC /* DataRequest+Unbox.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
 		B390A5E01F135031006CB64A /* GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DF1F135031006CB64A /* GeneratorTests.swift */; };
-		B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */; };
 		E37AB9CABA41A66ECDC9E338 /* Pods_Democracy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +83,6 @@
 		B30EDFB11F09C7C8006BDA24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B31FF96CD34159F58EFD3927 /* Pods_Democracy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Democracy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38445B91F12ED0100D758BA /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Request.swift"; sourceTree = "<group>"; };
 		B38445C21F12EDF500D758BA /* PoliticiansState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansState.swift; sourceTree = "<group>"; };
 		B38445C51F12EE1C00D758BA /* Politician.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Politician.swift; sourceTree = "<group>"; };
 		B38445C71F12EF2900D758BA /* PoliticiansReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticiansReducer.swift; sourceTree = "<group>"; };
@@ -126,11 +124,11 @@
 		B38616A51F1AE710001099FC /* ArrayModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayModifiers.swift; sourceTree = "<group>"; };
 		B38616A71F1AEFCF001099FC /* RxSwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftExtensions.swift; sourceTree = "<group>"; };
 		B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowedPoliticiansReducerTests.swift; sourceTree = "<group>"; };
+		B38616AD1F1C51D4001099FC /* DataRequest+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataRequest+Unbox.swift"; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		B390A5DF1F135031006CB64A /* GeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratorTests.swift; sourceTree = "<group>"; };
-		B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SessionManager+Unbox.swift"; sourceTree = "<group>"; };
 		D21E3CF614409AF2AAD3572A /* Pods-DemocracyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemocracyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemocracyTests/Pods-DemocracyTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF207EF941E7A419DBEAACE3 /* Pods-Democracy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.release.xcconfig"; sourceTree = "<group>"; };
 		E4CF9C624CEBE69CD078E536 /* Pods-Democracy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Democracy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Democracy/Pods-Democracy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,8 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				B38445B91F12ED0100D758BA /* Request.swift */,
-				B38445BB1F12ED0D00D758BA /* SessionManager+Request.swift */,
-				B390A5E11F13534B006CB64A /* SessionManager+Unbox.swift */,
+				B38616AD1F1C51D4001099FC /* DataRequest+Unbox.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -570,7 +567,7 @@
 				B386166D1F18114C001099FC /* Action.swift in Sources */,
 				B386169D1F1ADD38001099FC /* L10n.swift in Sources */,
 				B30EDF9B1F09C7C7006BDA24 /* AppDelegate.swift in Sources */,
-				B390A5E21F13534B006CB64A /* SessionManager+Unbox.swift in Sources */,
+				B38616AE1F1C51D4001099FC /* DataRequest+Unbox.swift in Sources */,
 				B38616521F17C617001099FC /* Epics.swift in Sources */,
 				B38616A41F1AE65A001099FC /* FollowedPoliticiansAction.swift in Sources */,
 				B38616731F1813E3001099FC /* Middleware.swift in Sources */,
@@ -587,7 +584,6 @@
 				B38616A81F1AEFCF001099FC /* RxSwiftExtensions.swift in Sources */,
 				B386166B1F181117001099FC /* Store.swift in Sources */,
 				B38616981F1ADB51001099FC /* Asset.swift in Sources */,
-				B38445BC1F12ED0D00D758BA /* SessionManager+Request.swift in Sources */,
 				B38616851F195BE7001099FC /* PoliticiansView.swift in Sources */,
 				B38616911F1969B5001099FC /* PoliticianItem.swift in Sources */,
 				B38616751F181EED001099FC /* EpicMiddleware.swift in Sources */,

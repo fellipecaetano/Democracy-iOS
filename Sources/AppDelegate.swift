@@ -1,8 +1,4 @@
 import UIKit
-import Alamofire
-import RxAlamofire
-import RxSwift
-import Unbox
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
