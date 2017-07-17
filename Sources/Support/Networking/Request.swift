@@ -1,6 +1,6 @@
 import Alamofire
 
-struct Request<T> {
+struct Request {
     let url: URL
     let method: HTTPMethod
     let parameters: Parameters

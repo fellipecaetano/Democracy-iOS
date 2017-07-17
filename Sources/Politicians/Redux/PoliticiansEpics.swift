@@ -14,7 +14,7 @@ func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
 }
 
 func LoadPoliticiansEpic(actions: Observable<Action>,
-                         values: @escaping (Request<[Politician]>) -> Observable<[Politician]>) -> Observable<Action> {
+                         values: @escaping (Request) -> Observable<[Politician]>) -> Observable<Action> {
     return actions
         .map(RequestFactory.request)
         .unwrap()
@@ -25,10 +25,10 @@ func LoadPoliticiansEpic(actions: Observable<Action>,
 }
 
 private struct RequestFactory {
-    static func request(forAction action: Action) -> Request<[Politician]>? {
+    static func request(forAction action: Action) -> Request? {
         switch action {
         case PoliticiansAction.startLoading:
-            return Request<[Politician]>(
+            return Request(
                 url: URL(string: "/politicians")!,
                 method: .get,
                 parameters: [:],

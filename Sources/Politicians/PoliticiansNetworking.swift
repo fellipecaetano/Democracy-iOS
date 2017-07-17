@@ -1,7 +1,7 @@
 import Alamofire
 
-func LoadPoliticiansRequest() -> Request<[Politician]> {
-    return pipe(Request<[Politician]>.init, APIDefaults.enhanceRequest)((
+func LoadPoliticiansRequest() -> Request {
+    return pipe(Request.init, APIDefaults.enhanceRequest)((
         URL(string: "/politicians")!,
         .get,
         [:],
