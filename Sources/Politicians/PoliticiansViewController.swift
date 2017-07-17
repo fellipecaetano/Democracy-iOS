@@ -21,4 +21,8 @@ final class PoliticiansViewController: UIViewController {
     override func loadView() {
         view = PoliticiansView(frame: UIScreen.main.bounds)
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
