@@ -5,10 +5,7 @@ final class AppStore: StoreProtocol, ObservableType {
 
     private let store = Store<AppState>(
         initialState: .initial,
-        reducer: AppReducer,
-        middleware: MiddlewareUtils.combine(
-            EpicMiddleware.create(LoadPoliticiansEpic)
-        )
+        reducer: AppReducer
     )
 
     var state: AppState {
