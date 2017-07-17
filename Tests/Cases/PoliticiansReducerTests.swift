@@ -49,6 +49,21 @@ class PoliticiansReducerTests: XCTestCase {
 
         expect(self.reducer(PoliticiansAction.fail(newError))).to(applyTransitions(transitions))
     }
+
+    func testStateTransitionsWhenUnknownActionIsDispatched() {
+        struct UnknownAction: Action {}
+
+        let transitions: [Transition<PoliticiansState>] = [
+            .initial => .initial,
+            .loading() => .loading(),
+            .loading(previousData: previousData) => .loading(previousData: previousData),
+            .loaded(with: previousData) => .loaded(with: previousData),
+            .failed(error: previousError) => .failed(error: previousError),
+            .failed(error: previousError, previousData: previousData) => .failed(error: previousError, previousData: previousData)
+        ]
+
+        expect(self.reducer(UnknownAction())).to(applyTransitions(transitions))
+    }
 }
 
 private extension PoliticiansState {

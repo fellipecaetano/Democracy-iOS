@@ -53,6 +53,7 @@
 		B38616A41F1AE65A001099FC /* FollowedPoliticiansAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A31F1AE65A001099FC /* FollowedPoliticiansAction.swift */; };
 		B38616A61F1AE710001099FC /* ArrayModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A51F1AE710001099FC /* ArrayModifiers.swift */; };
 		B38616A81F1AEFCF001099FC /* RxSwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A71F1AEFCF001099FC /* RxSwiftExtensions.swift */; };
+		B38616AA1F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */; };
 		B390A5D81F134F8D006CB64A /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D41F134F72006CB64A /* Transition.swift */; };
 		B390A5DB1F134FAD006CB64A /* Nimble+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */; };
 		B390A5DE1F13501A006CB64A /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390A5DC1F135000006CB64A /* Generator.swift */; };
@@ -124,6 +125,7 @@
 		B38616A31F1AE65A001099FC /* FollowedPoliticiansAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowedPoliticiansAction.swift; sourceTree = "<group>"; };
 		B38616A51F1AE710001099FC /* ArrayModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayModifiers.swift; sourceTree = "<group>"; };
 		B38616A71F1AEFCF001099FC /* RxSwiftExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwiftExtensions.swift; sourceTree = "<group>"; };
+		B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowedPoliticiansReducerTests.swift; sourceTree = "<group>"; };
 		B390A5D41F134F72006CB64A /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		B390A5D91F134F9E006CB64A /* Nimble+Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Nimble+Transitions.swift"; sourceTree = "<group>"; };
 		B390A5DC1F135000006CB64A /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 			children = (
 				B390A5DF1F135031006CB64A /* GeneratorTests.swift */,
 				B38445CB1F12FCB300D758BA /* PoliticiansReducerTests.swift */,
+				B38616A91F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift */,
 			);
 			path = Cases;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B38616AA1F1C34D6001099FC /* FollowedPoliticiansReducerTests.swift in Sources */,
 				B390A5D81F134F8D006CB64A /* Transition.swift in Sources */,
 				B38445CC1F12FCB300D758BA /* PoliticiansReducerTests.swift in Sources */,
 				B38445CF1F1319A000D758BA /* TestData.swift in Sources */,

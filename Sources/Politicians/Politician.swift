@@ -7,6 +7,16 @@ struct Politician: Unboxable, Equatable {
     let partyAcronym: String
     let federativeUnit: String
 
+    init (name: String,
+          photoUrl: URL,
+          partyAcronym: String,
+          federativeUnit: String) {
+        self.name = name
+        self.photoUrl = photoUrl
+        self.partyAcronym = partyAcronym
+        self.federativeUnit = federativeUnit
+    }
+
     init(unboxer: Unboxer) throws {
         name = try unboxer.unbox(key: "name")
         photoUrl = try unboxer.unbox(key: "photoUrl")

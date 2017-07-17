@@ -1,3 +1,15 @@
+func curry<T, U, V>(_ fn: @escaping (T, U) -> V) -> (T) -> (U) -> V {
+    return { t in { u in
+        return fn(t, u)
+    }}
+}
+
+func flip<T, U, V>(_ fn: @escaping (T, U) -> V) -> (U, T) -> V {
+    return { u, t in
+        return fn(t, u)
+    }
+}
+
 func not<T>(_ fn: @escaping (T) -> Bool) -> (T) -> Bool {
     return { t in
         return !fn(t)
