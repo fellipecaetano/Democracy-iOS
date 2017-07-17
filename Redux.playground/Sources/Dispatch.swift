@@ -1,0 +1,1 @@
+typealias Dispatch = (Action) -> Void
