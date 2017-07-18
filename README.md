@@ -22,7 +22,3 @@ app, which is also located in tag `1.0.3`.
 The `live-coding` branch is the product of live coding during the
 [Redux + RxSwift](https://speakerdeck.com/fellipecaetano/redux-plus-rxswift) presentation 
 held at [TDC São Paulo 2017](thedevelopersconference.com.br/tdc/2017/saopaulo).
-
-## TODO
-- Upload the presentation to Speakerdeck and fix the URL
-- Fix the tag number
