@@ -49,9 +49,3 @@ protocol StoreProtocol {
     func dispatch(_ action: Action)
     func subscribe(_ subscription: @escaping (State) -> Void) -> () -> Void
 }
-
-extension StoreProtocol {
-    func dispatch(_ thunk: (Dispatch) -> Void) {
-        thunk(dispatch(_:))
-    }
-}

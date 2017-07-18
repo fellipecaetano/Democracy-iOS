@@ -33,8 +33,7 @@ struct PoliticiansViewModelFactory {
                     })
                     .asDriver(onErrorDriveWith: .empty()),
 
-                actions: Observable.combineLatest(state.distinctUntilChanged(),
-                                                  input.followedIndex)
+                actions: Observable.combineLatest(state.distinctUntilChanged(), input.followedIndex)
                     .map({ $0.data[$1] })
                     .map(FollowedPoliticiansAction.mark)
                     .startWith(PoliticiansAction.startLoading)

@@ -27,6 +27,7 @@ private final class ViewControllerFactory {
 
         let viewController = PoliticiansViewController(viewModel: viewModel)
         viewController.title = L10n.senators.string
+
         store.connect(to: viewController.rx.actions, of: viewController)
         return viewController
     }
