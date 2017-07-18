@@ -1,7 +1,7 @@
 import Foundation
 
 struct APIDefaults {
-    private static let baseURL = URL(string: "http://localhost:9000")!
+    private static let baseURL = URL(string: "https://democracy-api.herokuapp.com")!
 
     static func enhanceRequest(_ request: Request) -> Request {
         guard var components = URLComponents(url: request.url, resolvingAgainstBaseURL: true) else {
