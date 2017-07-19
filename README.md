@@ -17,7 +17,7 @@ and you're good to go.
 ## Branching
 
 The `master` branch is the final version of the full-fledged example
-app, which is also located in tag `1.0.3`.
+app.
 
 The `live-coding` branch is the product of live coding during the
 [Redux + RxSwift](https://speakerdeck.com/fellipecaetano/redux-plus-rxswift) presentation 
