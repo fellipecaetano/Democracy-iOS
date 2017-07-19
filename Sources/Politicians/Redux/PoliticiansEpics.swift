@@ -7,19 +7,19 @@ func LoadPoliticiansEpic(actions: Observable<Action>) -> Observable<Action> {
 
     return LoadPoliticiansEpic(
         actions: actions,
-        values: { request in
+        value: { request in
             sessionManager.request(request).rx.value()
         }
     )
 }
 
 func LoadPoliticiansEpic(actions: Observable<Action>,
-                         values: @escaping (Request) -> Observable<[Politician]>) -> Observable<Action> {
+                         value: @escaping (Request) -> Single<[Politician]>) -> Observable<Action> {
     return actions
         .map(RequestFactory.request)
         .unwrap()
         .map(APIDefaults.enhanceRequest)
-        .flatMap(values)
+        .flatMapLatest(value)
         .map(PoliticiansAction.load)
         .catchError(pipe(PoliticiansAction.fail, Observable.just))
 }
