@@ -20,8 +20,13 @@ final class AppRouter {
 
 private final class ViewControllerFactory {
     static func politicians(store: AppStore) -> PoliticiansViewController {
-        let viewController = PoliticiansViewController()
+        let viewController = PoliticiansViewController(
+            state: store.map({ $0.politicians }),
+            dispatch: store.dispatch
+        )
+
         viewController.title = L10n.senators.string
+
         return viewController
     }
 }

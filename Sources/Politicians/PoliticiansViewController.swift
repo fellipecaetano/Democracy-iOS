@@ -1,7 +1,12 @@
 import UIKit
 import RxSwift
+import Alamofire
 
 final class PoliticiansViewController: UIViewController {
+    private let state: Observable<PoliticiansState>
+    private let dispatch: (Action) -> Void
+    private let sessionManager = SessionManager()
+
     var smartView: PoliticiansView! {
         return view as? PoliticiansView
     }
@@ -10,7 +15,9 @@ final class PoliticiansViewController: UIViewController {
         return smartView.tableView
     }
 
-    init() {
+    init(state: Observable<PoliticiansState>, dispatch: @escaping (Action) -> Void) {
+        self.state = state
+        self.dispatch = dispatch
         super.init(nibName: nil, bundle: nil)
     }
 
