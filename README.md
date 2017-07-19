@@ -1,7 +1,7 @@
 # Democracy iOS
 
-An example app and live coding template that showscases how to develop
-a Redux-inspired architecture using RxSwift as the sole abstraction
+An example app and live coding template that showcases how to develop
+a Redux-inspired architecture using RxSwift as the main abstraction
 for data flow and computation.
 
 ## Requirements
