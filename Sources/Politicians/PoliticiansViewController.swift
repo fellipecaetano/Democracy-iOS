@@ -31,5 +31,33 @@ final class PoliticiansViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        _ = state
+            .map({ $0.data })
+            .map({ politicians in
+                politicians.map(PoliticianItemFactory.item)
+            })
+            .bind(to: tableView.rx.items(cellIdentifier: PoliticianTableViewCell.reuseIdentifier, cellType: PoliticianTableViewCell.self)) { index, item, cell in
+                cell.render(item: item)
+            }
+
+        _ = state
+            .map(PoliticiansViewStateFactory.viewState)
+            .bind(to: smartView.rx.state)
+
+        dispatch(PoliticiansAction.startLoading)
+
+        sessionManager
+            .request(LoadPoliticiansRequest())
+            .responseValue { (response: DataResponse<[Politician]>) in
+                switch response.result {
+                case .success(let politicians):
+                    self.dispatch(
+                        PoliticiansAction.load(politicians)
+                    )
+                case .failure(let error):
+                    self.dispatch(PoliticiansAction.fail(error))
+                }
+            }
     }
 }
