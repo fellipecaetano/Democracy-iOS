@@ -31,17 +31,16 @@ extension DataRequest {
 }
 
 extension Reactive where Base == DataRequest {
-    func value<T: Unboxable>() -> Observable<T> {
-        return Observable.create { observer in
+    func value<T: Unboxable>() -> Single<T> {
+        return .create { commit in
             let request = self.base
 
             request.responseValue { (response: DataResponse<T>) in
                 switch response.result {
                 case .success(let value):
-                    observer.onNext(value)
-                    observer.onCompleted()
+                    commit(.success(value))
                 case .failure(let error):
-                    observer.onError(error)
+                    commit(.error(error))
                 }
             }
 
